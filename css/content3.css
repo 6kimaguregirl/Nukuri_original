@@ -30,6 +30,10 @@ header {
     background-color: #ededed;
 }
 
+#section1 p small:hover{
+    
+}
+
 #section1_graph2 figure {
     padding-top: 65px;
 }
