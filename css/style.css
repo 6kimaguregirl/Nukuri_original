@@ -35,11 +35,11 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h4{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p {
@@ -77,4 +77,23 @@ footer h3 {
 
 @media screen and (max-width:479px){
     /* ここにスマホ版のCSSを書いていくよ */
+
+/*font系の指示はここ------------------*/
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    h4{
+        13px
+    }
+    p{
+        12px
+    }
+   
+    
 }

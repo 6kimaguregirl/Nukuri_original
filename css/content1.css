@@ -1,33 +1,50 @@
-header{
+header {
     background-image: url(img/bg_content1_2.jpg);
-    height:300px;
+    height: 300px;
 }
 
-h2{
+h2 {
     padding: 50px 0px;
 }
 
-.flex{
+.flex {
     justify-content: space-around;
 }
 
 
 /*section1雲をさがす------------------------------------------*/
-#section1{
+#section1 {
     background-color: #f5f5f5;
-    padding: 50px 0px;
+    padding: 50px 0px 100px;
 }
 
-#height img{
+#height img {
     background-color: #fff;
 }
 
-.weather_link h3{
+.weather_link h3 {
     text-align: center;
 }
 
+/*---section2について-------------------------------------------*/
+#section2{
+    position: relative;
+    padding:50px 0px 100px;
+    background-image: url(img/01_section2_bg.png);
+    background-size: contain;
+} 
+
+#section2 .bg_white{
+    background-color: #fff;
+}
+
+#section2 .twitter_bird{
+position: absolute;
+    bottom:-10px;
+    right:70px;
+}
 
 
-@media screen and (max-width:479px){
+@media screen and (max-width:479px) {
     /* ここにスマホ版のCSSを書いていくよ */
 }

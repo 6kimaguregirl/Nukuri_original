@@ -3,11 +3,12 @@ header{
 }
 
 /*menu*/
+
 .menu_cloud{
     position: absolute;
     top: 20px;
     right: 20px;
-}
+   }
 
 .menu{
     height: 20px;

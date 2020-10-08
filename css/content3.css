@@ -1,12 +1,12 @@
 /*headerについて-----------------------------------*/
 
-header{
+header {
     background-image: url(img/bg_content3_2.png);
 }
 
 /*section1 年間の気象状況の比較について------------------*/
 
-#section1{
+#section1 {
     margin: 50px 0px;
 }
 
@@ -18,31 +18,135 @@ header{
     padding: 15px 0px;
 }
 
-#section1 .flex{
+#section1 .flex {
     justify-content: space-between;
 }
 
-#section1 h3{
+#section1 h3 {
     padding: 10px 0px;
 }
 
-#section1 p small{
+#section1 p small {
     background-color: #ededed;
 }
 
-#section1_graph2 figure{
+#section1_graph2 figure {
     padding-top: 65px;
 }
 
+/*section2について---------------------------------------------*/
+#section2 {
+    margin: 50px 0px;
+}
+
+#section2 .title {
+    padding: 50px;
+    position: relative;
+}
+
+#section2 .title p {
+    position: absolute;
+    left: 50%;
+}
+
+#section2 .section2_data .flex {
+    padding: 20px 0px 5px;
+    align-items: flex-end;
+}
+
+#section2 .section2_data .flex h3 {
+    padding-right: 10px;
+}
+
+#section2 .section2_data .flex {
+    justify-content: flex-start;
+}
+
+
+#section2 .section2_data p data {
+    font-size: 40px;
+}
+
+#section2 .section2_data p span {
+    font-size: 12px;
+}
+
+#section2 .flex {
+    justify-content: space-around;
+}
+
+#section2 .upper {
+    flex-direction: column;
+}
+
+#section2 .lower {
+    display: flex;
+    flex-direction: column;
+}
+
+#section2 #section2_data5 h3 {
+    padding-top: 20px;
+}
+
+#section2 #section2_data6 h3 {
+    padding-top: 20px;
+}
+
+/*section3について-----------------------------------------------*/
+#section3{
+    padding-bottom:150px;
+}
+
+#section3 h2{
+    margin: 50px 0px;
+}
+
+#section3 .figure {
+    position: relative;
+    padding-right: 150px;
+}
+
+#section3 .section3_figure_prev{
+    position: absolute;
+    left:90px;
+    top: 40px;
+}
+
+#section3 .section3_figure_now{
+    position: absolute;
+    left:90px;
+    top:270px;
+}
+
+
+#section3 .section3_figure_purpose{
+    position: absolute;
+    left:90px;
+    top:200px;
+}
+
+#figure_capture{
+   margin: 0 auto;
+}
+
+#section3 .txt p{
+padding: 30px 0px;
+}
+
+#section3 .txt{
+    display: flex;
+    flex-direction: column;
+}
+
 /*footerについて-----------------------------------------------*/
-footer{
+footer {
     background-image: url(img/bg_content3_2.png);
 }
 
-footer nav li a span{
+footer nav li a span {
     color: #fff;
 }
 
-@media screen and (max-width:479px){
+@media screen and (max-width:479px) {
     /* ここにスマホ版のCSSを書いていくよ */
 }

@@ -23,8 +23,12 @@ header .title {
     left: 15vw;
 }
 
-header .title h1 {
-    font-size: 48px;
+header .h1_pc {
+ margin: 30px 0px;
+}
+
+header .h1_sp{
+    display: none;
 }
 
 header .title h3 {
@@ -254,7 +258,8 @@ header .title h3 {
         -ms-transform: translateX(150px);
         transform: :translateX(150px);
     }
-  50% {
+
+    50% {
         -webkit-transform: translateX(-20px);
         -ms-transform: translateX(-20px);
         transform: :translateX(-20px);
@@ -286,7 +291,7 @@ footer nav li {
 
 footer nav li a {
     color: #fff;
-    margin:0px 40px;
+    margin: 0px 40px;
 }
 
 footer h3 {
@@ -298,4 +303,36 @@ footer h3 {
 
 @media screen and (max-width:479px) {
     /* ここにスマホ版のCSSを書いていくよ */
+    /*
+    .wrapper{
+        width: 355px;
+    }*/
+
+    header {
+        background-image: url(img/00_header_bg_sp.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    header .title {
+        position: absolute;
+        top: 85vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .h1_pc {
+       display: none;
+        }
+    header .h1_sp{
+        display: block;
+        width:250px
+    }
+
+    header .title h3 {
+        padding: 20px 0px;
+        font-size: 14px;
+        text-align: center;
+    }
 }
