@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #001E4E;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*すべてのheaderに------------------*/
+header {
+    height: 300px;
+}
+
+/*コンテンツを1020px以内に収める-------*/
+.wrapper {
+    width: 1020px;
+    margin: auto;
+}
+
+/*font系の指示はここ------------------*/
+h1 {
+    padding: 32px 0px;
+    font-size: 32px;
+}
+
+header span {
+    font-size: 24px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/*横並びにしたいんだ------------------*/
+.flex {
+    display: flex;
+}
+
+/*すべてのfooterに共通することはここ-----*/
+footer {
+    height: 200px;
+}
+
+footer nav {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav li {
+    list-style: none;
+}
+
+footer nav li a {
+    margin:0px 40px ;
+}
+
+footer h3 {
+    font-family: Ink Free;
+    text-align: center;
+}
+
+@media screen and (max-width:479px){
+    /* ここにスマホ版のCSSを書いていくよ */
+}

@@ -1,0 +1,250 @@
+header{
+    background-image: url(img/bg_content4_2.jpg);
+}
+
+h2{
+    padding: 15px 0px;
+}
+
+.title{
+    margin-bottom: 50px;
+}
+
+/*section1 step1 知るについて---------------------------------------*/
+
+#section1{
+    margin: 100px 0px;
+}
+
+#section1 .flex{
+    justify-content: space-between;
+}
+
+#section1 .gr{
+  width: 300px;
+    border:solid 0.5px #001E4E;
+}
+
+#section1 .gr{
+    padding: 70px 10px 20px;
+    box-sizing: border-box;
+    margin-top: 90px;
+}
+
+#section1 .gr h3{
+    text-align: center;
+}
+
+#section1 .section1_txt p{
+    margin: 20px 0px;
+}
+
+/*markのこと*/
+#section1_gr1{
+position: relative;
+}
+
+#section1_mark1{
+    position: absolute;
+    background-color: #E78C8B;
+    width: 80px;
+    height: 80px;
+    top:-40px;
+    right:110px;
+    border-radius: 50%;
+}
+
+#section1_mark1 p{
+    font-size: 40px;
+    font-family:Comic Sans MS;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+#section1_gr2{
+position: relative;
+}
+
+#section1_mark2{
+    position: absolute;
+    background-color: #E78C8B;
+    width: 80px;
+    height: 80px;
+    top:-40px;
+    right:110px;
+    border-radius: 50%;
+}
+
+#section1_mark2 p{
+    font-size: 24px;
+    font-family:Comic Sans MS;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+#section1_gr3{
+position: relative;
+}
+
+#section1_mark3{
+    position: absolute;
+    background-color:#E78C8B;
+    width: 80px;
+    height: 80px;
+    top:-40px;
+    right:110px;
+    border-radius: 50%;
+}
+
+#section1_mark3 p{
+    font-size: 24px;
+    font-family:Comic Sans MS;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
+
+/*addressのこと*/
+.section1_address p{
+    padding:10px 0px 10px;
+}
+
+#section1 .flex{
+    justify-content: space-around;
+}
+
+#section1 .flex img:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+
+/*section1 step2 わかるについて---------------------------------------*/
+.section2_answer{
+    margin:10px 0px;
+    padding: 0;
+} 
+
+.section2_answer label{
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #A4AEC0;
+    background-color: #F4F4E4;
+    cursor: pointer;
+}
+
+.section2_answer label:hover{
+    background-color: #A4AEC0;
+    color: #F4F4E4;
+    transition:0.5s;
+}
+
+.section2_answer input{
+    display: none;
+}
+
+.section2_answer .section2_show{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:0.8s;
+}
+
+.section2_answer input:checked ~ .section2_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+
+/*section3 step3 実行するについて---------------------------------------*/
+#section3 .flex{
+    justify-content: space-around;
+}
+
+#section3 .subtitle{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+#section3 .subtitle img{
+    padding-right: 10px;
+}
+
+#section3 h4{
+    line-height: 80px;
+    font-size: 20px;
+}
+
+
+/*section4 step4 教えるについて---------------------------------------*/
+#section4 .flex{
+justify-content: space-around;
+}
+
+#section4_gr1 h3{
+    text-align: center;
+}
+
+#section4 h3{
+    text-align: center;
+}
+
+#section4 figure{
+    width: 100px;
+    height: 100px;
+    border: solid 0.5px #777;
+    border-radius: 50%;
+}
+
+#section4_gr1 figure{
+    position: relative;
+}
+
+#section4_gr1 figure img{
+    position: absolute;
+    top: 50%;
+    left:25%;
+    transform:translateX(-50%);
+    transform:translateY(-50%);
+}
+
+#section4_gr2 figure{
+    position: relative;
+    margin: auto;
+}
+
+#section4_gr2 figure img{
+    position: absolute;
+    top: 50%;
+    left:25%;
+    transform:translateX(-50%);
+    transform:translateY(-50%);
+}
+
+#section4_gr3 figure{
+    position: relative;
+}
+
+#section4_gr3 figure img{
+    position: absolute;
+    top: 50%;
+    left:25%;
+    transform:translateX(-50%);
+    transform:translateY(-50%);
+}
+
+/*footerについて------------------------------------------------*/
+footer{
+    background-image: url(img/bg_content4_2.jpg);
+}
+
+
+@media screen and (max-width:479px){
+    /* ここにスマホ版のCSSを書いていくよ */
+}

@@ -1,0 +1,48 @@
+/*headerについて-----------------------------------*/
+
+header{
+    background-image: url(img/bg_content3_2.png);
+}
+
+/*section1 年間の気象状況の比較について------------------*/
+
+#section1{
+    margin: 50px 0px;
+}
+
+#section1 .title {
+    padding: 50px 0px;
+}
+
+#section1 .title p {
+    padding: 15px 0px;
+}
+
+#section1 .flex{
+    justify-content: space-between;
+}
+
+#section1 h3{
+    padding: 10px 0px;
+}
+
+#section1 p small{
+    background-color: #ededed;
+}
+
+#section1_graph2 figure{
+    padding-top: 65px;
+}
+
+/*footerについて-----------------------------------------------*/
+footer{
+    background-image: url(img/bg_content3_2.png);
+}
+
+footer nav li a span{
+    color: #fff;
+}
+
+@media screen and (max-width:479px){
+    /* ここにスマホ版のCSSを書いていくよ */
+}

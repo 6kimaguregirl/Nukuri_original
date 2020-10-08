@@ -1,0 +1,112 @@
+/*headerについて-----------------------------------*/
+
+header {
+   background-image: url(img/bg_content2_2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header span {
+    color: #fff;
+}
+
+header p {
+    color: #fff;
+}
+
+/*section1_積乱雲の発生条件について-------------------*/
+
+#section1 {
+    margin: 50px 0px;
+}
+
+#section1 .title {
+    padding: 50px 0px;
+}
+
+#section1 .title p {
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.section1_gr {
+    padding: 50px;
+}
+
+.section1_txt {
+    margin-left: 150px;
+}
+
+.section1_txt p {
+    padding: 15px 0px;
+}
+
+/*section2_集中豪雨発生要因について-------------------*/
+#section2{
+    margin: 100px 0px;    
+}
+
+#section2 .title p {
+    padding: 15px 0px;
+}
+
+#section2 .title{
+    margin-bottom: 50px;
+}
+
+#section2 .section2_txt{
+    margin-bottom: 50px;
+}
+
+#section2 .section2_txt p{
+    padding: 15px 0px;
+}
+
+/*section3_近年の気象災害について-------------------*/
+#section3{
+    margin: 50px 0px 150px;
+}
+
+#section3 h2{
+    margin-bottom: 50px;
+}
+
+#section3 h3 {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#section3 img {
+    display: block;
+    margin: auto;
+}
+
+#section3 .flex {
+    justify-content: space-around;
+}
+
+/*footerについて-----------------------------------------*/
+footer{
+    background-image: url(img/bg_content2_2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+footer nav li a{
+    color: #fff;
+}
+
+footer h3{
+    color: #fff;
+}
+
+
+@media screen and (max-width:479px){
+    /* ここにスマホ版のCSSを書いていくよ */
+}
