@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/content1.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -42,136 +44,148 @@
         </div>
     </header>
     <section id="section1">
-        <div class="wrapper">
-            <div>
-                <h2>いろいろな雲</h2>
-                <div class="flex">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <img src="img/cloud10.png" alt="" width="200px">
+        <section id="section1">
+            <div class="wrapper">
+                <div>
+                    <h2>いろいろな雲</h2>
+                    <div class="slider">
+                        <a href="clouds.html" id="cloud10" class="cloud"><img src="img/cloud10.png" alt="" width="220px"></a>
+                        <a href="clouds.html" id="cloud9" class="cloud"><img src="img/cloud9.png" alt="" width="240px"></a>
+                        <a href="clouds.html" id="cloud8" class="cloud"><img src="img/cloud8.png" alt="" width="240px"></a>
+                        <a href="clouds.html" id="cloud7" class="cloud"><img src="img/cloud7.png" alt="" width="240px"></a>
+                    </div>
                 </div>
-            </div>
-            <div id="height">
-                <h2>高さで分ける雲</h2>
-                <div class="flex">
-                    <div class="img_animation_1">
-                        <a href="javascript:void(0);">
-                            <a href="height.html#hight_1">
-                                <div class="img">
-                                    <img src="img/01_section1_height1.png" alt="" width="300px">
-                                </div>
-                                <div class="caption">
-                                    <div class="captionContent">
-                                        <h3 class="link_title">上層雲</h3>
-                                        <span class="line"></span>
-                                        <p class="description">> 詳しくみる</p>
+                <div id="height">
+                    <h2>高さで分ける雲</h2>
+                    <div class="flex">
+                        <div class="img_animation_1">
+                            <a href="javascript:void(0);">
+                                <a href="height.html#hight_1">
+                                    <div class="img">
+                                        <img src="img/01_section1_height1.png" alt="" width="300px">
                                     </div>
-                                </div>
-                            </a>
-                        </a>
-                    </div>
-                    <div class="img_animation_1">
-                        <a href="javascript:void(0);">
-                            <a href="height.html#hight_2">
-                                <div class="img">
-                                    <img src="img/01_section1_height2.png" alt="" width="300px">
-                                </div>
-                                <div class="caption">
-                                    <div class="captionContent">
-                                        <h3 class="link_title">中層雲</h3>
-                                        <span class="line"></span>
-                                        <p class="description">> 詳しくみる</p>
+                                    <div class="caption">
+                                        <div class="captionContent">
+                                            <h3 class="link_title">上層雲</h3>
+                                            <span class="line"></span>
+                                            <p class="description">> 詳しくみる</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </a>
-                        </a>
-                    </div>
-                    <div class="img_animation_1">
-                        <a href="javascript:void(0);">
-                            <a href="height.html#hight_3">
-                                <div class="img">
-                                    <img src="img/01_section1_height3.png" alt="" width="300px">
-                                </div>
-                                <div class="caption">
-                                    <div class="captionContent">
-                                        <h3 class="link_title">下層雲</h3>
-                                        <span class="line"></span>
-                                        <p class="description">> 詳しくみる</p>
+                        </div>
+                        <div class="img_animation_1">
+                            <a href="javascript:void(0);">
+                                <a href="height.html#hight_2">
+                                    <div class="img">
+                                        <img src="img/01_section1_height2.png" alt="" width="300px">
                                     </div>
-                                </div>
+                                    <div class="caption">
+                                        <div class="captionContent">
+                                            <h3 class="link_title">中層雲</h3>
+                                            <span class="line"></span>
+                                            <p class="description">> 詳しくみる</p>
+                                        </div>
+                                    </div>
+                                </a>
                             </a>
-                        </a>
+                        </div>
+                        <div class="img_animation_1">
+                            <a href="javascript:void(0);">
+                                <a href="height.html#hight_3">
+                                    <div class="img">
+                                        <img src="img/01_section1_height3.png" alt="" width="300px">
+                                    </div>
+                                    <div class="caption">
+                                        <div class="captionContent">
+                                            <h3 class="link_title">下層雲</h3>
+                                            <span class="line"></span>
+                                            <p class="description">> 詳しくみる</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather_link_all">
+                    <h2>天気で分ける雲</h2>
+                    <div class="flex">
+                        <div id="weather_sun" class="weather_link">
+                            <a href="weather.html" class="underline">
+                                <img src="img/01_section1_weather1.png" alt="" width="200px">
+                                <h3>▷ 晴れの日の雲</h3>
+                            </a>
+                        </div>
+                        <div id="weather_cloud" class="weather_link">
+                            <a href="weather.html" class="underline">
+                                <img src="img/01_section1_weather2.png" alt="" width="200px">
+                                <h3>▷ 曇りの日の雲</h3>
+                            </a>
+                        </div>
+                        <div id="weather_rain" class="weather_link">
+                            <a href="weather.html" class="underline">
+                                <img src="img/01_section1_weather3.png" alt="" width="200px">
+                                <h3>▷ 雨の日の雲</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="weather_link_all">
-                <h2>天気で分ける雲</h2>
-                <div class="flex">
-                    <div id="weather_sun" class="weather_link">
-                        <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather1.png" alt="" width="200px">
-                            <h3>▷ 晴れの日の雲</h3>
-                        </a>
+        </section>
+        <section id="section2">
+            <div class="wrapper">
+                <h2>今日の天気は？</h2>
+                <div class="bg_white">
+                    <div class="mamewaza_weather">
+                        <div>
+                            <div class="mamewaza_weather_exp"></div>
+                        </div>
                     </div>
-                    <div id="weather_cloud" class="weather_link">
-                        <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather2.png" alt="" width="200px">
-                            <h3>▷ 曇りの日の雲</h3>
-                        </a>
-                    </div>
-                    <div id="weather_rain" class="weather_link">
-                        <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather3.png" alt="" width="200px">
-                            <h3>▷ 雨の日の雲</h3>
-                        </a>
-                    </div>
+                    <script type="text/javascript" src="https://mamewaza.net/weather.js?200804"></script>
+                    <script type="text/javascript">
+                        mamewaza_weather({
+                            layout: "horizontal",
+                            when: "7days",
+                            region: "130010",
+                            style: "div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"
+                        })
+                    </script>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="section2">
-        <div class="wrapper">
-            <h2>今日の天気は？</h2>
-            <div class="bg_white">
-                <div class="mamewaza_weather">
-                    <div>
-                        <div class="mamewaza_weather_exp"></div>
-                    </div>
-                </div>
-                <script type="text/javascript" src="https://mamewaza.net/weather.js?200804"></script>
-                <script type="text/javascript">
-                    mamewaza_weather({
-                        layout: "horizontal",
-                        when: "7days",
-                        region: "130010",
-                        style: "div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"
-                    })
-                </script>
-            </div>
-        </div>
-        <a href="https://twiter.com/share?
+            <a href="https://twiter.com/share?
            hashtags=#今日の雲をツイートする" text=cloudtocrisis rel="nofollow" target="_blank">
-            <img src="img/01_section3_post.png" class="twitter_bird" alt="" width="150px">
-        </a>
-    </section>
-    <footer>
-        <div class="wrapper">
-            <nav>
-                <li><a href="index.html" class="link_underline">ホーム</a></li>
-                <li><a href="#" class="link_underline">身近な雲</a></li>
-                <li><a href="content2.html" class="link_underline">集中豪雨</a></li>
-                <li><a href="content3.html" class="link_underline">地球温暖化</a></li>
-                <li><a href="content4.html" class="link_underline">私たちにできること</a></li>
-            </nav>
-            <h3>Face the climate emergency</h3>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $('.menu').on('click', function() {
-            $('.menu__line').toggleClass('active');
-            $('.gnav').fadeToggle();
-        });
-    </script>
-
+                <img src="img/01_section3_post.png" class="twitter_bird" alt="" width="150px">
+            </a>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <nav>
+                    <li><a href="index.html" class="link_underline">ホーム</a></li>
+                    <li><a href="#" class="link_underline">身近な雲</a></li>
+                    <li><a href="content2.html" class="link_underline">集中豪雨</a></li>
+                    <li><a href="content3.html" class="link_underline">地球温暖化</a></li>
+                    <li><a href="content4.html" class="link_underline">私たちにできること</a></li>
+                </nav>
+                <h3>Face the climate emergency</h3>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $('.menu').on('click', function() {
+                $('.menu__line').toggleClass('active');
+                $('.gnav').fadeToggle();
+            });
+        </script>
+        <script type="text/javascript" src="js/slick.min.js">
+        </script>
+        <script>
+            $('.slider').slick({
+                autoplay: true,
+                dots: true,
+                slidesToShow: 3,
+                sLidesToScroll: 1,
+                arrows: true,
+            });
+        </script>
 </body></html>
