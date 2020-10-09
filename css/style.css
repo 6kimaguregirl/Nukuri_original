@@ -1,99 +1,122 @@
 * {
     padding: 0;
     margin: 0;
-    color: #001E4E;
 }
-
-body {
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
 /*すべてのheaderに------------------*/
 header {
     height: 300px;
 }
-
 /*コンテンツを1020px以内に収める-------*/
 .wrapper {
     width: 1020px;
     margin: auto;
 }
-
 /*font系の指示はここ------------------*/
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #001E4E;
+}
+header span {
+    font-size: 24px;/*headerの各コンテンツの数字にだけ向けた指示*/
+}
 h1 {
     padding: 32px 0px;
     font-size: 32px;
 }
-
-header span {
-    font-size: 24px;
-}
-
 h2 {
     text-align: center;
     font-size: 24px;
+    padding: 50px 0px 10px;
 }
-
 h3 {
     font-size: 20px;
+    padding: 20px 0px;
 }
-
-h4{
+h4 {
     font-size: 18px;
 }
-
 p {
     font-size: 16px;
+    padding: 15px 0px;
 }
-
 /*横並びにしたいんだ------------------*/
 .flex {
     display: flex;
 }
-
+/*sp版でのみ改行するためのもの！！--------*/
+.br_sp {
+    display: none;
+}
 /*すべてのfooterに共通することはここ-----*/
 footer {
     height: 200px;
 }
-
 footer nav {
     padding: 50px 0px;
     display: flex;
     justify-content: center;
 }
-
 footer nav li {
     list-style: none;
 }
-
 footer nav li a {
-    margin:0px 40px ;
+    margin: 0px 40px;
 }
-
 footer h3 {
     font-family: Ink Free;
     text-align: center;
 }
+/* ---ここからスマホ版----------------------*/
+@media screen and (max-width:479px) {
 
-@media screen and (max-width:479px){
-    /* ここにスマホ版のCSSを書いていくよ */
-
-/*font系の指示はここ------------------*/
-    h1{
+    /*すべてのheaderに------------------*/
+    header {
+        width: 100vw;
+        height: 375px;
+    }
+    header h1 {
+        margin: 0px 20px;
+    }
+    header p {
+        margin: 0 20px;
+    }
+    /*コンテンツを365px以内に収める-------*/
+    .wrapper {
+        width: 365px;
+    }
+    /*sp版でのみ改行するためのもの！！--------*/
+    .br_sp {
+        display: inline;
+    }
+    /*font系の指示はここ------------------*/
+    h1 {
         font-size: 18px;
     }
-    h2{
+    h2 {
         font-size: 16px;
+        padding: 20px 0px;
     }
-    h3{
+    h3 {
         font-size: 14px;
+         padding: 12px 0px;
     }
-    h4{
-        13px
+    h4 {
+        font-size: 13px;
     }
-    p{
-        12px
+    p {
+        font-size: 12px;
+        padding: 10px 0px;
     }
-   
-    
+    /*すべてのfooterに共通することはここ-----*/
+    footer nav li a {
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+    footer nav li {
+        margin: 10px 0px;
+    }
+    footer nav {
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
 }

@@ -24,10 +24,10 @@ header .title {
 }
 
 header .h1_pc {
- margin: 30px 0px;
+    margin: 30px 0px;
 }
 
-header .h1_sp{
+header .h1_sp {
     display: none;
 }
 
@@ -303,10 +303,6 @@ footer h3 {
 
 @media screen and (max-width:479px) {
     /* ここにスマホ版のCSSを書いていくよ */
-    /*
-    .wrapper{
-        width: 355px;
-    }*/
 
     header {
         background-image: url(img/00_header_bg_sp.png);
@@ -323,16 +319,132 @@ footer h3 {
     }
 
     header .h1_pc {
-       display: none;
-        }
-    header .h1_sp{
+        display: none;
+    }
+
+    header .h1_sp {
         display: block;
-        width:250px
+        width: 250px
     }
 
     header .title h3 {
         padding: 20px 0px;
         font-size: 14px;
         text-align: center;
+    }
+
+    /*---messageのところについて---------------------------*/
+    #message {
+        height: 50vh;
+    }
+
+    #message p {
+        font-size: 12px;
+        line-height: 50px;
+    }
+
+    #message p span {
+        font-size: 16px;
+    }
+
+    /*---contentsについて--------------------------------*/
+    .content h2 {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .content p {
+        font-size: 12px;
+        padding: 5px;
+        background-color:rgba(255,255,255,0.7);
+    }
+
+    .content a {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+    .content_img {
+        display: none;
+    }
+
+    .stripe {
+        display: none;
+    }
+
+    #content1 {
+        background-image: url(img/bg_content1.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    #content1 .content_txt {
+        left: 20px;
+    }
+    #content2 {
+        background-image: url(img/bg_content2.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    #content2 .content_txt h2{
+        left: 20px;
+        color: #fff;
+    }
+    
+    #content2 .content_txt h3{
+        left: 20px;
+        color: #fff;
+    }
+
+    #content2 a {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    #content3 {
+        background-image: url(img/bg_content3.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    #content3 a {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    #content3 .content_txt {
+        left: 20px;
+    }
+
+    #content4 {
+        background-image: url(img/bg_content4.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    #content4 .content_txt {
+        left: 20px;
+    }
+    #content4 a{
+        background-color:rgba(255,255,255,0.7);
+    }
+
+    /*---footerについて---------------------------------*/
+
+    footer nav li a {
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+
+    footer nav li {
+        margin: 10px 0px;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        padding: 20px 0px;
     }
 }

@@ -1,25 +1,54 @@
-header {
-    background-image: url(img/bg_content4_2.jpg);
-}
-
-h2 {
-    padding: 15px 0px;
+/*---content01に共通のものについて------------------------------*/
+.flex {
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .title {
-    margin-bottom: 50px;
+    padding: 30px 0px 50px;
 }
 
 .title p {
     text-align: center;
 }
 
-/*section1 step1 知るについて---------------------------------------*/
-
-#section1 {
-    margin: 100px 0px;
+section {
+    padding: 50px 0px;
 }
 
+/*---headerについて------------------------------------------*/
+header {
+    background-image: url(img/bg_content4_2.jpg);
+}
+
+/*---svg画像について------------------------------------------*/
+.icon-home {
+    width: 30px;
+    height: 30px;
+    fill: #a9a9a9;
+    transition: 0.2s;
+}
+
+.icon-home:hover {
+    fill: #8b4513;
+    transition: 0.2s;
+}
+
+.icon-twitter {
+    width: 30px;
+    height: 30px;
+    fill: #a9a9a9;
+    transition: 0.2s;
+}
+
+.icon-instagram {
+    width: 30px;
+    height: 30px;
+    fill: #a9a9a9;
+    transition: 0.2s;
+}
+
+/*section1 step1 知るについて----------------------------------*/
 #section1 .flex {
     justify-content: space-between;
 }
@@ -27,29 +56,22 @@ h2 {
 #section1 .gr {
     width: 300px;
     border: solid 0.5px #001E4E;
-}
-
-#section1 .gr {
-    padding: 70px 10px 20px;
+    padding: 50px 10px 20px;
     box-sizing: border-box;
-    margin-top: 90px;
 }
 
 #section1 .gr h3 {
     text-align: center;
 }
-
-#section1 .section1_txt p {
-    margin: 20px 0px;
-}
-
 /*markのこと*/
-#section1_gr1 {
-    position: relative;
+#section1 .mark p {
+    font-family: Comic Sans MS;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
 }
 
-#section1_mark1 {
-    position: absolute;
+#section1 .mark {
     background-color: #E78C8B;
     width: 80px;
     height: 80px;
@@ -58,12 +80,16 @@ h2 {
     border-radius: 50%;
 }
 
+#section1_gr1 {
+    position: relative;
+}
+
+#section1_mark1 {
+    position: absolute;
+}
+
 #section1_mark1 p {
     font-size: 40px;
-    font-family: Comic Sans MS;
-    color: #fff;
-    line-height: 80px;
-    text-align: center;
 }
 
 #section1_gr2 {
@@ -72,20 +98,10 @@ h2 {
 
 #section1_mark2 {
     position: absolute;
-    background-color: #E78C8B;
-    width: 80px;
-    height: 80px;
-    top: -40px;
-    right: 110px;
-    border-radius: 50%;
 }
 
 #section1_mark2 p {
     font-size: 24px;
-    font-family: Comic Sans MS;
-    color: #fff;
-    line-height: 80px;
-    text-align: center;
 }
 
 #section1_gr3 {
@@ -94,27 +110,13 @@ h2 {
 
 #section1_mark3 {
     position: absolute;
-    background-color: #E78C8B;
-    width: 80px;
-    height: 80px;
-    top: -40px;
-    right: 110px;
-    border-radius: 50%;
 }
 
 #section1_mark3 p {
     font-size: 24px;
-    font-family: Comic Sans MS;
-    color: #fff;
-    line-height: 80px;
-    text-align: center;
 }
 
 /*addressのこと*/
-.section1_address p {
-    padding: 10px 0px 10px;
-}
-
 #section1 .flex {
     justify-content: space-around;
 }
@@ -125,31 +127,29 @@ h2 {
 }
 
 /*section1 step2 わかるについて---------------------------------------*/
-
 #section2 {
-    margin-bottom: 100px;
     background-image: url(img/bg_clock.png);
     -webkit-background-size: contain;
-    background-size:contain;
+    background-size: contain;
 }
 
 #section2 .flex {
     align-items: center;
+    justify-content: flex-start;
     padding: 20px 0px;
 }
 
 #section2 .flex h4 {
     margin-right: 50px;
-    background-color:rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
-
 .section2_answer {
     display: flex;
 }
-
 .section2_answer label {
     font-size: 16px;
-    background-color:rgba(255,255,255,0.6);
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
 }
 
@@ -174,67 +174,97 @@ h2 {
     opacity: 1;
 }
 
-
 /*section3 step3 実行するについて---------------------------------------*/
-#section3 {
-    margin-bottom: 100px;
-}
-
 #section3 .flex {
     justify-content: space-around;
 }
 
 #section3 .subtitle {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 30px;
 }
-
 #section3 .subtitle img {
-    padding-right: 10px;
+    padding-right: 20px;
+    object-fit: contain;
 }
-
 #section3 h4 {
-    line-height: 80px;
-    font-size: 20px;
+    line-height: 50px;
 }
-
 
 /*section4 step4 教えるについて---------------------------------------*/
 #section4 {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
-
-#section4 .flex {
-    justify-content: space-around;
-}
-
-#section4 .section4_gr{
+#section4 .section4_gr {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#section4 .section4_gr h3{
-    padding: 20px;
-}
-
-
-#section4 .section4_gr p{
+#section4 .section4_gr p {
     width: 250px;
-    padding-top: 10px;
     border-top: solid 0.8px #707070;
 }
-
 
 /*footerについて------------------------------------------------*/
 footer {
     background-image: url(img/bg_content4_2.jpg);
 }
 
-
+/* ---ここからスマホ版----------------------*/
 @media screen and (max-width:479px) {
-    /* ここにスマホ版のCSSを書いていくよ */
+    section {
+        width:100%;
+        padding: 25px 0px 0px;
+    }
+    
+    .title {
+        padding: 20px 0px;
+    }
+    
+    #section1 .gr{
+        padding: 25px 5px;
+        margin: 20px 10px;
+    }
+    #section1 .mark{
+        width: 50px;
+        height: 50px;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #section1 .mark p{
+        padding: 0;
+    }
+    #section1_mark1 p{
+        font-size: 20px;
+    }
+    #section1_mark2 p{
+        font-size: 13px;
+    }
+        #section1_mark3 p{
+        font-size: 20px;
+    }
+    .section2_answer label{
+        font-size: 12px;
+    }
+    #section2 .flex{
+        padding-bottom: 0px;
+    }
+    #section3 h4 {
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center
+    }
+    #section3 .flex{
+        flex-direction: column;
+    }
+    #section3_dont .subtitle{
+        padding:30px 0px 0px;
+    }
+    #section4 img{
+        width: 30px;
+    }
 }

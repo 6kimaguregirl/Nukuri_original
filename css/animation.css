@@ -196,3 +196,8 @@ a:hover .caption .description {
 .underline:hover::after {
     transform: scale(1, 1);
 }
+
+
+@media screen and (max-width:479px) {
+    
+}

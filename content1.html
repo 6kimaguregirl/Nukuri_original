@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <img src="img/menu.png" alt="" width="70px" class="menu_cloud">
+        <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
         <a class="menu">
             <span class="menu__line menu__line--top"></span>
             <span class="menu__line menu__line--center"></span>
@@ -45,6 +45,11 @@
         <div class="wrapper">
             <div>
                 <h2>いろいろな雲</h2>
+                <div class="flex">
+                    <img src="img/cloud10.png" alt="" width="200px">
+                    <img src="img/cloud10.png" alt="" width="200px">
+                    <img src="img/cloud10.png" alt="" width="200px">
+                </div>
             </div>
             <div id="height">
                 <h2>高さで分ける雲</h2>
@@ -104,7 +109,7 @@
                 <div class="flex">
                     <div id="weather_sun" class="weather_link">
                         <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather1.png" alt="" id="camera" class="fluffy" width="200px">
+                            <img src="img/01_section1_weather1.png" alt="" width="200px">
                             <h3>▷ 晴れの日の雲</h3>
                         </a>
                     </div>
@@ -139,9 +144,8 @@
                         layout: "horizontal",
                         when: "7days",
                         region: "130010",
-                        style: "div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:0px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"
+                        style: "div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"
                     })
-
                 </script>
             </div>
         </div>
@@ -168,9 +172,6 @@
             $('.menu__line').toggleClass('active');
             $('.gnav').fadeToggle();
         });
-
     </script>
-    
-</body>
 
-</html>
+</body></html>

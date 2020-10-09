@@ -1,37 +1,23 @@
-/*headerについて-----------------------------------*/
+/*---content02に共通のものについて----------------------*/
+section {
+    padding: 50px 0px;
+}
 
+/*headerについて-----------------------------------*/
 header {
     background-image: url(img/bg_content3_2.png);
 }
 
 /*section1 年間の気象状況の比較について------------------*/
-
-#section1 {
-    margin: 50px 0px;
-}
-
-#section1 .title {
+/*#section1 .title {
     padding: 50px 0px;
-}
-
-#section1 .title p {
-    padding: 15px 0px;
-}
-
+}*/
 #section1 .flex {
     justify-content: space-between;
 }
 
-#section1 h3 {
-    padding: 10px 0px;
-}
-
 #section1 p small {
     background-color: #ededed;
-}
-
-#section1 p small:hover{
-    
 }
 
 #section1_graph2 figure {
@@ -39,12 +25,7 @@ header {
 }
 
 /*section2について---------------------------------------------*/
-#section2 {
-    margin: 50px 0px;
-}
-
 #section2 .title {
-    padding: 50px;
     position: relative;
 }
 
@@ -65,7 +46,6 @@ header {
 #section2 .section2_data .flex {
     justify-content: flex-start;
 }
-
 
 #section2 .section2_data p data {
     font-size: 40px;
@@ -97,47 +77,33 @@ header {
 }
 
 /*section3について-----------------------------------------------*/
-#section3{
-    padding-bottom:150px;
-}
-
-#section3 h2{
-    margin: 50px 0px;
-}
-
 #section3 .figure {
     position: relative;
     padding-right: 150px;
 }
 
-#section3 .section3_figure_prev{
+#section3 .section3_figure_prev {
     position: absolute;
-    left:90px;
+    left: 90px;
     top: 40px;
 }
-
-#section3 .section3_figure_now{
+#section3 .section3_figure_now {
     position: absolute;
-    left:90px;
-    top:270px;
+    left: 90px;
+    top: 270px;
 }
 
-
-#section3 .section3_figure_purpose{
+#section3 .section3_figure_purpose {
     position: absolute;
-    left:90px;
-    top:200px;
+    left: 90px;
+    top: 200px;
 }
 
-#figure_capture{
-   margin: 0 auto;
+#figure_capture {
+    margin: 0 auto;
 }
 
-#section3 .txt p{
-padding: 30px 0px;
-}
-
-#section3 .txt{
+#section3 .txt {
     display: flex;
     flex-direction: column;
 }
@@ -151,6 +117,54 @@ footer nav li a span {
     color: #fff;
 }
 
+/* ---ここからスマホ版----------------------*/
 @media screen and (max-width:479px) {
-    /* ここにスマホ版のCSSを書いていくよ */
+    section {
+    padding: 50px 0px;
+}
+
+    .title {
+    padding: 30px 0px 50px;
+}
+
+    footer nav li a span {
+        color: #001E4E;
+    }
+    #section1 .flex{
+flex-direction: column;
+    }
+    #section1 img{
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    #section2 .title p{
+        padding: 0;
+    }
+    #section2 .section2_data .flex{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+   
+    #section2 .section2_data h5{
+        font-size: 10px;
+    }
+    #section2_data2 h3{
+        padding:15px 0px 5px 0px;
+    }
+    #section2_data3 h3{
+        padding:15px 0px 5px 0px;
+    }
+    #section3 .figure {
+        width: 150px;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        transform: scale(0.8)
+    }
+
+    #section3 .flex {
+        flex-direction: column
+    }
 }

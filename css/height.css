@@ -22,6 +22,7 @@ body {
     display: -o-flex;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -68,7 +69,8 @@ footer h3 {
 }
 
 .height_cloud a{
-    padding: 10px 0px;
+    padding: 10px 0px 2px;
+    width:50px
 }
 
 .height_cloud img{
@@ -86,12 +88,15 @@ h1{
 
 h2{
     text-align: center;
-    padding: 50px 0px;
+    padding: 50px 0px 30px;
     border-bottom: solid #001E4E 3px; 
     width: 120px;
     margin:30px auto;
 }
 
+footer{
+height: 100px;
+}
 
 @media screen and (max-width:479px){
     /* ここにスマホ版のCSSを書いていくよ */

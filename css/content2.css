@@ -1,84 +1,36 @@
-/*headerについて-----------------------------------*/
-
-header {
-   background-image: url(img/bg_content2_2.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-header h1 {
-    color: #fff;
-}
-
-header span {
-    color: #fff;
-}
-
-header p {
-    color: #fff;
-}
-
-/*section1_積乱雲の発生条件について-------------------*/
-
-#section1 {
-    margin: 50px 0px;
-}
-
-#section1 .title {
+/*---content02に共通のものについて----------------------*/
+section {
     padding: 50px 0px;
 }
-
+.title {
+    padding: 30px 0px 50px;
+}
+/*headerについて-----------------------------------*/
+header {
+    background-image: url(img/bg_content2_2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+/*section1_積乱雲の発生条件について-------------------*/
 #section1 .title p {
-    padding: 15px 0px;
     text-align: center;
 }
 
 .section1_gr {
-    padding: 50px;
+    padding: 30px 0px;
 }
 
 .section1_txt {
     margin-left: 150px;
 }
 
-.section1_txt p {
-    padding: 15px 0px;
-}
-
 /*section2_集中豪雨発生要因について-------------------*/
-#section2{
-    margin: 100px 0px;    
-}
-
-#section2 .title p {
-    padding: 15px 0px;
-}
-
-#section2 .title{
-    margin-bottom: 50px;
-}
-
-#section2 .section2_txt{
-    margin-bottom: 50px;
-}
-
-#section2 .section2_txt p{
-    padding: 15px 0px;
-}
-
 /*section3_近年の気象災害について-------------------*/
-#section3{
-    margin: 50px 0px 150px;
-}
-
-#section3 h2{
-    margin-bottom: 50px;
-}
-
 #section3 h3 {
     font-size: 18px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -91,22 +43,67 @@ header p {
     justify-content: space-around;
 }
 
+#section3 {
+    margin-bottom: 100px;
+}
+
 /*footerについて-----------------------------------------*/
-footer{
+footer {
     background-image: url(img/bg_content2_2.jpg);
     -webkit-background-size: cover;
     background-size: cover;
-}
-
-footer nav li a{
     color: #fff;
 }
 
-footer h3{
+footer nav li a {
     color: #fff;
 }
 
+/* ---ここからスマホ版----------------------*/
+@media screen and (max-width:479px) {
+    section {
+        width: 100%;
+        padding: 25px 0px 0px;
+    }
 
-@media screen and (max-width:479px){
-    /* ここにスマホ版のCSSを書いていくよ */
+    .title {
+        padding: 20px 0px;
+    }
+
+    .section1_gr {
+        padding: 10px;
+    }
+
+    #section1 .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1_txt {
+        margin-left: 0px;
+    }
+
+    #section2_exp img {
+        width: 370px;
+    }
+
+    #section3 h3 {
+        font-size: 12px;
+    }
+
+    #section3 .typhoon img {
+        width: 36px;
+    }
+
+    #section3 .snow img {
+        width: 50px;
+    }
+
+    #section3 .rain img {
+        width: 50px;
+    }
+
+    #section3 {
+        margin-bottom: 50px;
+    }
 }
