@@ -24,6 +24,11 @@ header {
     padding-top: 65px;
 }
 
+#section1 .year{
+    width: 150px;
+    display: block;
+    margin: 0 0 0 auto;
+}
 /*section2について---------------------------------------------*/
 #section2 .title {
     position: relative;
@@ -32,10 +37,10 @@ header {
 #section2 .title p {
     position: absolute;
     left: 50%;
+    padding: 0;
 }
 
 #section2 .section2_data .flex {
-    padding: 20px 0px 5px;
     align-items: flex-end;
 }
 
@@ -67,7 +72,12 @@ header {
     display: flex;
     flex-direction: column;
 }
-
+#section2 #section2_data2 .flex h5{
+    padding: 20px;
+}
+#section2 #section2_data3 .flex h5{
+    padding: 20px;
+}
 #section2 #section2_data5 h3 {
     padding-top: 20px;
 }
@@ -87,6 +97,7 @@ header {
     left: 90px;
     top: 40px;
 }
+
 #section3 .section3_figure_now {
     position: absolute;
     left: 90px;
@@ -107,6 +118,9 @@ header {
     display: flex;
     flex-direction: column;
 }
+#section3 {
+    margin-bottom: 100px;
+}
 
 /*footerについて-----------------------------------------------*/
 footer {
@@ -120,42 +134,55 @@ footer nav li a span {
 /* ---ここからスマホ版----------------------*/
 @media screen and (max-width:479px) {
     section {
-    padding: 50px 0px;
-}
+        padding: 25px 0px 0px;
+    }
 
     .title {
-    padding: 30px 0px 50px;
-}
+        padding: 20px 0px 0px;
+    }
 
     footer nav li a span {
         color: #001E4E;
     }
-    #section1 .flex{
-flex-direction: column;
+
+    #section1 .flex {
+        flex-direction: column;
     }
-    #section1 img{
+    #section1 h3{
+        text-align: center;
+    }
+    #section1 .data {
         width: 300px;
         display: block;
         margin: 0 auto;
     }
-    #section2 .title p{
+    #section1 .year{
+        width: 100px;
+        display: block;
+        margin: 5px 20px 0 auto;
+    }
+    #section2 .title p {
         padding: 0;
     }
-    #section2 .section2_data .flex{
+
+    #section2 .section2_data .flex {
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
     }
-   
-    #section2 .section2_data h5{
+
+    #section2 .section2_data h5 {
         font-size: 10px;
     }
-    #section2_data2 h3{
-        padding:15px 0px 5px 0px;
+
+    #section2_data2 h3 {
+        padding: 15px 0px 5px 0px;
     }
-    #section2_data3 h3{
-        padding:15px 0px 5px 0px;
+
+    #section2_data3 h3 {
+        padding: 15px 0px 5px 0px;
     }
+
     #section3 .figure {
         width: 150px;
         padding: 0;
@@ -166,5 +193,8 @@ flex-direction: column;
 
     #section3 .flex {
         flex-direction: column
+    }
+    #section3{
+        margin-bottom: 50px;
     }
 }

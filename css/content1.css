@@ -30,7 +30,9 @@ header {
     transform: scale(1.1);
     transition: 0.4s;
 }
-
+#section1 #weather_link_all h3{
+    padding:20px 0px 0px;
+}
 /*---section2について-------------------------------------------*/
 #section2 {
     position: relative;

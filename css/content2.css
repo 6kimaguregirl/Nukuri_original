@@ -24,6 +24,13 @@ header {
 .section1_txt {
     margin-left: 150px;
 }
+.section1_gr img{
+ transform: rotateZ(0deg);   
+}
+.section1_gr img:hover{
+    transform:rotateZ(180deg);
+    transform:scale(1.1);
+}
 
 /*section2_集中豪雨発生要因について-------------------*/
 /*section3_近年の気象災害について-------------------*/

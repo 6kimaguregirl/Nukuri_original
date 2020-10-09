@@ -13,28 +13,31 @@
 <body>
     <header>
         <div class="title">
-            <img src="img/00_h1_pc.png" alt="" class="h1_pc">
-            <img src="img/00_h1_sp.png" alt="" class="h1_sp">
+            <h1>最近の天気<br class="br_sp">なんだかおかしくない？</h1>
             <h3>そんな疑問に答えるサイト</h3>
         </div>
     </header>
     <section id="message">
         <div class="wrapper">
             <p>日本近海の海面水温はこの100年で1.4℃上昇。<br>
-               地球温暖化によって気象災害は確実に増加している。<br>
+                地球温暖化によって気象災害は確実に増加している。<br>
                 <span class="typ">
-                    「最近の天気、なんだかおかしくない？」
+                    「最近の天気、
+                    なんだかおかしくない？」
                 </span><br>
                 あなたの小さな疑問はやがて確信へと変わるだろう<br>
-                確信に変わったらもう手遅れかもしれない。</p>
+                確信に変わったらもう手遅れかもしれない。
+            </p>
         </div>
     </section>
     <section id="content_all">
         <section id="content1" class="content">
             <div id="stripe1" class="stripe"></div>
-            <div class="content_img">
-                <img src="img/bg_content1.jpg" alt="">
-            </div>
+            <a href="content1.html">
+                <div class="content_img">
+                    <img src="img/bg_content1.jpg" alt="">
+                </div>
+            </a>
             <div class="content_txt">
                 <h2>Clouds</h2>
                 <h3>身近な雲</h3>
@@ -50,33 +53,39 @@
                 <a href="content2.html">More ></a>
             </div>
             <div id="stripe2" class="stripe"></div>
-            <div class="content_img">
-                <img src="img/bg_content2.jpg" alt="">
-            </div>
+            <a href="content2.html">
+                <div class="content_img">
+                    <img src="img/bg_content2.jpg" alt="">
+                </div>
+            </a>
         </section>
         <section id="content3" class="content">
-            <div id="stripe3" class="stripe"></div>
-            <div class="content_img">
-                <img src="img/bg_content3.png" alt="">
-            </div>
-            <div class="content_txt">
-                <h2>Global warming</h2>
-                <h3>地球温暖化</h3>
-                <p>数字で語ります。<br>地球温暖化の深刻さ。</p>
-                <a href="content3.html">More ></a>
-            </div>
+                <div id="stripe3" class="stripe"></div>
+                <a href="content3.html">
+                <div class="content_img">
+                        <img src="img/bg_content3.png" alt="">
+                </div>
+                </a>
+                <div class="content_txt">
+                    <h2>Global warming</h2>
+                    <h3>地球温暖化</h3>
+                    <p>数字で語ります。<br>地球温暖化の深刻さ。</p>
+                    <a href="content3.html">More ></a>
+                </div>
         </section>
         <section id="content4" class="content">
-            <div class="content_txt">
-                <h2>What we can do</h2>
-                <h3>私たちにできること</h3>
-                <p>なにができるのか、<br>考え始めたすべての方へ。</p>
-                <a href="content4.html">More ></a>
-            </div>
-            <div id="stripe4" class="stripe"></div>
-            <div class="content_img">
-                <img src="img/bg_content4.jpg" alt="">
-            </div>
+                <div class="content_txt">
+                    <h2>What we can do</h2>
+                    <h3>私たちにできること</h3>
+                    <p>なにができるのか、<br>考え始めたすべての方へ。</p>
+                    <a href="content4.html">More ></a>
+                </div>
+                <div id="stripe4" class="stripe"></div>
+                <a href="content4.html">
+                <div class="content_img">
+                    <img src="img/bg_content4.jpg" alt="">
+                </div>
+            </a>
         </section>
     </section>
     <footer>
@@ -85,7 +94,7 @@
                 <li><a href="#" class="link_underline_white">ホーム</a></li>
                 <li><a href="content1.html" class="link_underline_white">身近な雲</a></li>
                 <li><a href="content2.html" class="link_underline_white">集中豪雨</a></li>
-                <li><a href="content3.html" class="link_underline_white"_white>地球温暖化</a></li>
+                <li><a href="content3.html" class="link_underline_white" _white>地球温暖化</a></li>
                 <li><a href="content4.html" class="link_underline_white">私たちにできること</a></li>
             </nav>
         </div>
@@ -112,24 +121,28 @@
     </script>
     <script src="js/jquery.inview.min.js" type="text/javascript"></script>
     <script>
-    $('#content1').on('inview', function(){
-        $(this).addClass('slidein_left');
-    });
+        $('#content1').on('inview', function() {
+            $(this).addClass('slidein_left');
+        });
+
     </script>
     <script>
-    $('#content2').on('inview', function(){
-        $(this).addClass('slidein_right');
-    });
+        $('#content2').on('inview', function() {
+            $(this).addClass('slidein_right');
+        });
+
     </script>
     <script>
-    $('#content3').on('inview', function(){
-        $(this).addClass('slidein_left');
-    });
+        $('#content3').on('inview', function() {
+            $(this).addClass('slidein_left');
+        });
+
     </script>
     <script>
-    $('#content4').on('inview', function(){
-        $(this).addClass('slidein_right');
-    });
+        $('#content4').on('inview', function() {
+            $(this).addClass('slidein_right');
+        });
+
     </script>
 </body>
 
