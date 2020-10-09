@@ -44,15 +44,23 @@
         </div>
     </header>
     <section id="section1">
-        <section id="section1">
             <div class="wrapper">
                 <div>
                     <h2>いろいろな雲</h2>
                     <div class="slider">
-                        <a href="clouds.html" id="cloud10" class="cloud"><img src="img/cloud10.png" alt="" width="220px"></a>
-                        <a href="clouds.html" id="cloud9" class="cloud"><img src="img/cloud9.png" alt="" width="240px"></a>
-                        <a href="clouds.html" id="cloud8" class="cloud"><img src="img/cloud8.png" alt="" width="240px"></a>
-                        <a href="clouds.html" id="cloud7" class="cloud"><img src="img/cloud7.png" alt="" width="240px"></a>
+                        <a href="clouds.html" id="cloud10" class="cloud">
+                            <img src="img/cloud10.png" alt="" width="220px">
+                            <p>積乱雲</p>
+                        </a>
+                        <a href="clouds.html" id="cloud9" class="cloud"><img src="img/cloud9.png" alt="" width="240px">
+                            <p>層雲</p>
+                        </a>
+                        <a href="clouds.html" id="cloud8" class="cloud"><img src="img/cloud8.png" alt="" width="240px">
+                            <p>層積雲</p>
+                        </a>
+                        <a href="clouds.html" id="cloud7" class="cloud"><img src="img/cloud7.png" alt="" width="240px">
+                            <p>積雲</p>
+                        </a>
                     </div>
                 </div>
                 <div id="height">
@@ -150,6 +158,7 @@
                             region: "130010",
                             style: "div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"
                         })
+
                     </script>
                 </div>
             </div>
@@ -176,16 +185,20 @@
                 $('.menu__line').toggleClass('active');
                 $('.gnav').fadeToggle();
             });
+
         </script>
         <script type="text/javascript" src="js/slick.min.js">
         </script>
         <script>
             $('.slider').slick({
                 autoplay: true,
-                dots: true,
+                dots: false,
                 slidesToShow: 3,
                 sLidesToScroll: 1,
                 arrows: true,
             });
+
         </script>
-</body></html>
+</body>
+
+</html>

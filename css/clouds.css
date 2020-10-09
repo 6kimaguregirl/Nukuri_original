@@ -1,0 +1,15 @@
+#cloud_all header{
+    height: 200px;
+}
+
+#cloud_all section{
+    height: 100vh;
+}
+
+#cloud_all img{
+    width: 300px;
+}
+
+.cloud_txt{
+padding-left: 50px;
+}

@@ -8,6 +8,9 @@ section {
     padding: 50px 0px;
 }
 
+h2{
+    padding: 50px;
+}
 /*---headerについて------------------------------------------*/
 header {
     background-image: url(img/bg_content1_2.jpg);
