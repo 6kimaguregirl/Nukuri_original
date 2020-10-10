@@ -39,7 +39,7 @@
         </deffs>
     </svg>
 -->
-    <header>
+    <header class="fuwat_scroll">
         <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
         <a class="menu">
             <span class="menu__line menu__line--top"></span>
@@ -65,7 +65,7 @@
             <p>こんなおかしな天気、変えたい！そのために私たちに出来ることって？<br>知る、わかる、実行する、教えるの4stepをここで身につけちゃいましょう！</p>
         </div>
     </header>
-    <section id="section1">
+    <section id="section1" class="fuwat_scroll">
         <div class="wrapper">
             <div class="title">
                 <h2>step1 知る</h2>
@@ -142,7 +142,7 @@
             </div>
         </div>
     </section>
-    <section id="section2">
+    <section id="section2" class="fuwat_scroll">
         <div class="wrapper">
             <div class="title">
                 <h2>step2 理解する</h2>
@@ -220,7 +220,7 @@
             </div>
         </div>
     </section>
-    <section id="section3">
+    <section id="section3" class="fuwat_scroll">
         <div class="wrapper">
             <div class="title">
                 <h2>step3 実行する</h2>
@@ -254,7 +254,7 @@
             </div>
         </div>
     </section>
-    <section id="section4">
+    <section id="section4" class="fuwat_scroll">
         <div class="wrapper">
             <div class="title">
                 <h2>step4 教える</h2>
@@ -286,7 +286,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="fuwat_scroll">
         <nav>
             <li><a href="index.html" class="link_underline">ホーム</a></li>
             <li><a href="content1.html" class="link_underline">身近な雲</a></li>
@@ -297,6 +297,17 @@
         <h3>Face the climate emergency</h3>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script>
+    $(function(){
+        ScrollReveal().reveal('.fuwat_scroll',{
+            delay:200,
+            distance:'30px',
+            origin:'top',
+            duration:2000
+        });
+    });
+    </script>
     <script>
         $('.menu').on('click', function() {
             $('.menu__line').toggleClass('active');

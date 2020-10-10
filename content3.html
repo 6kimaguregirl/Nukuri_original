@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fuwat_scroll">
         <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
         <a class="menu">
             <span class="menu__line menu__line--top"></span>
@@ -39,7 +39,7 @@
             <p>最近の激しい気象災害には地球温暖化が影響している？<br>ここでは地球温暖化との関係性について詳しくみていきましょう。</p>
         </div>
     </header>
-    <section id="section1">
+    <section id="section1" class="fuwat_scroll">
         <div class="wrapper">
             <div class="title">
                 <h2>年間平均の気象状況の比較</h2>
@@ -70,7 +70,7 @@
             </p>
         </div>
     </section>
-    <section id="section2">
+    <section id="section2" class="fuwat_scroll">
         <div class="wrapper">
             <div class="title">
                 <h2>地球温暖化が進んだ21世紀末は……</h2>
@@ -114,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section id="section3">
+    <section id="section3" class="fuwat_scroll">
         <div class="wrapper">
             <h2>気温上昇と地球への影響</h2>
             <div class="flex">
@@ -138,7 +138,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="fuwat_scroll">
         <nav>
             <li><a href="index.html" class="link_underline">ホーム</a></li>
             <li><a href="content1.html" class="link_underline">身近な雲</a></li>
@@ -149,6 +149,17 @@
         <h3>Face the climate emergency</h3>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script>
+    $(function(){
+        ScrollReveal().reveal('.fuwat_scroll',{
+            delay:200,
+            distance:'30px',
+            origin:'top',
+            duration:2000
+        });
+    });
+    </script>
     <script>
         $('.menu').on('click', function() {
             $('.menu__line').toggleClass('active');

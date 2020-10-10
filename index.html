@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/animation.css">
+    <!--<link rel="stylesheet" href="css/jquery.pagepiling.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="fuwat_scroll">
         <div class="title">
             <h1>最近の天気<br class="br_sp">なんだかおかしくない？</h1>
             <h3>そんな疑問に答えるサイト</h3>
         </div>
     </header>
-    <section id="message">
+    <section id="message" class="fuwat_scroll">
         <div class="wrapper">
             <p>日本近海の海面水温はこの100年で1.4℃上昇。<br>
                 地球温暖化によって気象災害は確実に増加している。<br>
@@ -30,7 +31,7 @@
             </p>
         </div>
     </section>
-    <section id="content_all">
+    <section id="content_all" class="fuwat_scroll">
         <section id="content1" class="content">
             <div id="stripe1" class="stripe"></div>
             <a href="content1.html">
@@ -60,35 +61,35 @@
             </a>
         </section>
         <section id="content3" class="content">
-                <div id="stripe3" class="stripe"></div>
-                <a href="content3.html">
+            <div id="stripe3" class="stripe"></div>
+            <a href="content3.html">
                 <div class="content_img">
-                        <img src="img/bg_content3.png" alt="">
+                    <img src="img/bg_content3.png" alt="">
                 </div>
-                </a>
-                <div class="content_txt">
-                    <h2>Global warming</h2>
-                    <h3>地球温暖化</h3>
-                    <p>数字で語ります。<br>地球温暖化の深刻さ。</p>
-                    <a href="content3.html">More ></a>
-                </div>
+            </a>
+            <div class="content_txt">
+                <h2>Global warming</h2>
+                <h3>地球温暖化</h3>
+                <p>数字で語ります。<br>地球温暖化の深刻さ。</p>
+                <a href="content3.html">More ></a>
+            </div>
         </section>
         <section id="content4" class="content">
-                <div class="content_txt">
-                    <h2>What we can do</h2>
-                    <h3>私たちにできること</h3>
-                    <p>なにができるのか、<br>考え始めたすべての方へ。</p>
-                    <a href="content4.html">More ></a>
-                </div>
-                <div id="stripe4" class="stripe"></div>
-                <a href="content4.html">
+            <div class="content_txt">
+                <h2>What we can do</h2>
+                <h3>私たちにできること</h3>
+                <p>なにができるのか、<br>考え始めたすべての方へ。</p>
+                <a href="content4.html">More ></a>
+            </div>
+            <div id="stripe4" class="stripe"></div>
+            <a href="content4.html">
                 <div class="content_img">
                     <img src="img/bg_content4.jpg" alt="">
                 </div>
             </a>
         </section>
     </section>
-    <footer>
+    <footer class="fuwat_scroll">
         <div class="wrapper">
             <nav>
                 <li><a href="#" class="link_underline_white">ホーム</a></li>
@@ -101,6 +102,26 @@
         <h3>Face the climate emergency</h3>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script>
+        $(function() {
+            ScrollReveal().reveal('.fuwat_scroll', {
+                delay: 200,
+                distance: '30px',
+                origin: 'top',
+                duration: 2000
+            });
+        });
+    </script>
+    <!--
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script>
+        $(function() {
+            $('#pagepiling').pagepiling({
+                sectionSelector: '.scroll_section',
+            });
+        });
+    </script>-->
     <script>
         $(function() {
             var $allMsg = $('.typ');
@@ -117,33 +138,26 @@
                 }, 500);
             });
         });
-
     </script>
     <script src="js/jquery.inview.min.js" type="text/javascript"></script>
     <script>
         $('#content1').on('inview', function() {
             $(this).addClass('slidein_left');
         });
-
     </script>
     <script>
         $('#content2').on('inview', function() {
             $(this).addClass('slidein_right');
         });
-
     </script>
     <script>
         $('#content3').on('inview', function() {
             $(this).addClass('slidein_left');
         });
-
     </script>
     <script>
         $('#content4').on('inview', function() {
             $(this).addClass('slidein_right');
         });
-
     </script>
-</body>
-
-</html>
+</body></html>

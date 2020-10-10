@@ -6,9 +6,12 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
 }
-p{
+
+p {
     letter-spacing: 2px;
 }
+
+
 
 /*headerについて-------------------------------------------*/
 
@@ -25,11 +28,13 @@ header .title {
     top: 30vh;
     left: 15vw;
 }
-header .title h1{
+
+header .title h1 {
     font-size: 40px;
     letter-spacing: 5px;
     padding: 30px 0px;
 }
+
 header .title h3 {
     font-size: 24px;
     letter-spacing: 2px;
@@ -304,6 +309,7 @@ footer h3 {
 
 
 @media screen and (max-width:479px) {
+
     /* ここにスマホ版のCSSを書いていくよ */
     header {
         background-image: url(img/00_header_bg_sp.png);
@@ -315,15 +321,17 @@ footer h3 {
     header .title {
         position: absolute;
         width: 300px;
-        background-color:rgba(255,255,255,0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
     }
-    header .title h1{
+
+    header .title h1 {
         font-size: 18px;
         padding: 20px;
     }
+
     header .title h3 {
         padding: 20px 0px;
         font-size: 14px;
@@ -336,7 +344,7 @@ footer h3 {
 
     #message p {
         font-size: 12px;
-        line-height:40px;
+        line-height: 40px;
         width: 100vw;
     }
 
@@ -358,7 +366,7 @@ footer h3 {
     .content p {
         font-size: 12px;
         padding: 5px;
-        background-color:rgba(255,255,255,0.7);
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
     .content a {
@@ -379,21 +387,27 @@ footer h3 {
         -webkit-background-size: cover;
         background-size: cover;
     }
+
     #content1 .content_txt {
         left: 20px;
     }
+
     #content2 {
         background-image: url(img/bg_content2.jpg);
         -webkit-background-size: cover;
         background-size: cover;
     }
 
-    #content2 .content_txt h2{
+    #content2 .content_txt {
+        left: 20px;
+    }
+
+    #content2 .content_txt h2 {
         left: 20px;
         color: #fff;
     }
-    
-    #content2 .content_txt h3{
+
+    #content2 .content_txt h3 {
         left: 20px;
         color: #fff;
     }
@@ -408,6 +422,7 @@ footer h3 {
         -webkit-background-size: cover;
         background-size: cover;
     }
+
     #content3 a {
         color: #fff;
         border-color: #fff;
@@ -422,11 +437,13 @@ footer h3 {
         -webkit-background-size: cover;
         background-size: cover;
     }
+
     #content4 .content_txt {
         left: 20px;
     }
-    #content4 a{
-        background-color:rgba(255,255,255,0.7);
+
+    #content4 a {
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
     /*---footerについて---------------------------------*/
