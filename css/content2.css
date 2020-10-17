@@ -12,6 +12,11 @@ header {
     background-size: cover;
     color: #fff;
 }
+
+h1{
+    text-shadow: 3px 3px 0px rgba(50,50,50,0.8),
+    5px 5px 6px rgba(100,100,100,0.5);
+}
 /*section1_積乱雲の発生条件について-------------------*/
 #section1 .title p {
     text-align: center;

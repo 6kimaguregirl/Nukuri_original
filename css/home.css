@@ -4,14 +4,13 @@
 }
 
 body {
+    color: #001E4E;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 p {
     letter-spacing: 2px;
 }
-
-
 
 /*headerについて-------------------------------------------*/
 
@@ -29,17 +28,20 @@ header .title {
     left: 15vw;
 }
 
-header .title h1 {
-    font-size: 40px;
-    letter-spacing: 5px;
-    padding: 30px 0px;
+header .title img {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+header .title .font_sp {
+    display: none;
 }
 
 header .title h3 {
     font-size: 24px;
     letter-spacing: 2px;
+    padding-left: 6px;
 }
-
 
 /*messageについて---------------------------------------------*/
 
@@ -87,14 +89,19 @@ header .title h3 {
     justify-content: center;
 }
 
+.content:last-of-type {
+    margin-bottom: 100px;
+}
+
 .content h2 {
-    font-size: 60px;
-    font-family: Ink Free;
+    color: #fff;
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #001E4E, -1px 1px 1px #001E4E, 1px -1px 1px #001E4E, -1px -1px 1px #001E4E, 1px 0px 1px #001E4E, 0px 1px 1px #001E4E, -1px 0px 1px #001E4E, 0px -1px 1px #001E4E;
 }
 
 .content h3 {
-    margin: 10px 0px 10px 0px;
-    font-family: ふい字Ｐ;
+    margin-bottom: 10px;
 }
 
 .content p {
@@ -107,15 +114,19 @@ header .title h3 {
     padding: 5px 40px;
     color: #001E4E;
     border: solid 0.5px #001e4e;
-    transition: 0.5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    text-decoration: none;
 }
 
 .content_txt a:hover {
     color: #fff;
     background-color: #001E4E;
-    transition: 0.5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
 }
-
 
 /*各contentについて--------------------------------------------------------------------*/
 
@@ -142,8 +153,8 @@ header .title h3 {
     height: 15vw;
     position: absolute;
     right: 52vw;
-    bottom: 90px;
-    background: repeating-linear-gradient(45deg, #C8D3D9 0, #C8D3D9 10px, #fff 10px, #fff 20px);
+    bottom: 91px;
+    background: repeating-linear-gradient(45deg, #C8D3D9 0, #C8D3D9 2px, #fff 2px, #fff 8px);
 }
 
 
@@ -171,7 +182,7 @@ header .title h3 {
     position: absolute;
     left: 52vw;
     bottom: 90px;
-    background: repeating-linear-gradient(45deg, #526995 0, #526995 10px, #fff 10px, #fff 20px);
+    background: repeating-linear-gradient(45deg, #526995 0, #526995 2px, #fff 2px, #fff 8px);
 }
 
 #content3 {
@@ -198,7 +209,7 @@ header .title h3 {
     position: absolute;
     right: 52vw;
     bottom: 90px;
-    background: repeating-linear-gradient(45deg, #E78C8B 0, #E78C8B 10px, #fff 10px, #fff 20px);
+    background: repeating-linear-gradient(45deg, #E78C8B 0, #E78C8B 2px, #fff 2px, #fff 8px);
 }
 
 #content4 {
@@ -225,59 +236,7 @@ header .title h3 {
     position: absolute;
     left: 52vw;
     bottom: 90px;
-    background: repeating-linear-gradient(45deg, #FFFFBE 0, #FFFFBE 10px, #fff 10px, #fff 20px);
-}
-
-/*slideinについて----------------------------------------------*/
-
-.slidein_left {
-    animation: SlideIn_left 1.6s;
-}
-
-@keyframes SlideIn_left {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-150px);
-        -ms-transform: translateX(-150px);
-        transform: :translateX(-150px);
-    }
-
-    50% {
-        -webkit-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-        transform: :translateX(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.slidein_right {
-    animation: SlideIn_right 1.6s;
-}
-
-@keyframes SlideIn_right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(150px);
-        -ms-transform: translateX(150px);
-        transform: :translateX(150px);
-    }
-
-    50% {
-        -webkit-transform: translateX(-20px);
-        -ms-transform: translateX(-20px);
-        transform: :translateX(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        transform: :translateX(0px);
-    }
+    background: repeating-linear-gradient(45deg, #e6e6fa 0, #e6e6fa 2px, #fff 2px, #fff 8px);
 }
 
 /*footerについて---------------------------------------------*/
@@ -321,19 +280,24 @@ footer h3 {
     header .title {
         position: absolute;
         width: 300px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 1);
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
     }
 
-    header .title h1 {
-        font-size: 18px;
-        padding: 20px;
+    header .title .font_pc {
+        display: none;
+    }
+
+    header .title .font_sp {
+        display: block;
+        width: 80vw;
+        padding-top: 20px;
     }
 
     header .title h3 {
-        padding: 20px 0px;
+        padding: 10px 0px 20px;
         font-size: 14px;
     }
 
@@ -353,9 +317,16 @@ footer h3 {
     }
 
     /*---contentsについて--------------------------------*/
+    .content:last-of-type {
+        margin-bottom: 0px;
+    }
+
+
     .content h2 {
         font-size: 18px;
         padding: 5px;
+        color: #001E4E;
+        text-shadow: none;
     }
 
     .content h3 {
@@ -369,7 +340,7 @@ footer h3 {
         background-color: rgba(255, 255, 255, 0.7);
     }
 
-    .content a {
+    .content .more {
         font-size: 12px;
         padding: 5px 20px;
     }
@@ -438,11 +409,16 @@ footer h3 {
         background-size: cover;
     }
 
-    #content4 .content_txt {
-        left: 20px;
+    .content_txt {
+        width: 200px;
     }
 
-    #content4 a {
+    #content4 .content_txt {
+        left: 20px;
+
+    }
+
+    #content4 .more {
         background-color: rgba(255, 255, 255, 0.7);
     }
 

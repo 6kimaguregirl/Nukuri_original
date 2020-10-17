@@ -1,0 +1,29 @@
+#loader-bg {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    z-index: 1;
+}
+#loader {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin:0 auto;
+    color: #8BA9B2;
+    z-index: 2;
+}
+
+#loader p{
+    text-align: center;
+    line-height: 100vh;
+    font-size: 24px;
+}
+
+body {
+    background-color: #fff;
+}

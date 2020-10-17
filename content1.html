@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>01_clouds</title>
+    <link rel="icon" href="img/favicon.ico">
+    <title>01_身近な雲</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/content1.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -15,27 +16,28 @@
 </head>
 
 <body>
-    <header class="fuwat_scroll">
-        <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
-        <a class="menu">
+    <div class="menu_wrap">
+        <a class="menu fuwat_scroll">
             <span class="menu__line menu__line--top"></span>
             <span class="menu__line menu__line--center"></span>
             <span class="menu__line menu__line--bottom"></span>
         </a>
-        <nav class="gnav">
-            <div class="gnav__wrap">
-                <ul class="gnav__menu">
-                    <li class="gnav__menu__item"><a href="index.html">Home</a></li>
-                    <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
-                    <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
-                    <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
-                    <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
-                    <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
-                    <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
-                </ul>
-            </div>
-            <!--gnav-wrap-->
-        </nav>
+    </div>
+    <nav class="gnav">
+        <div class="gnav__wrap">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="fuwat_scroll">
+        <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
         <div class="wrapper">
             <h1><span>01</span><br>身近な雲</h1>
             <p>今日の雲はなんて雲だろう？<br>
@@ -45,26 +47,55 @@
     </header>
     <section id="section1">
         <div class="wrapper">
-            <div class="fuwat_scroll">
+            <div class="fuwat_scroll section1">
+               <div class="subtitle">
+               <img src="img/01_magglass.png" alt="">
                 <h2>いろいろな雲</h2>
+                </div>
                 <div class="slider">
-                    <a href="clouds.html" id="cloud10" class="cloud">
-                        <img src="img/cloud10.png" alt="" width="220px">
-                        <p>積乱雲</p>
+                   <a href="clouds.html#cloud1" id="cloud1" class="cloud">
+                        <img src="img/cloud1.png" alt="" width="240px">
+                        <p>巻雲</p>
                     </a>
-                    <a href="clouds.html" id="cloud9" class="cloud"><img src="img/cloud9.png" alt="" width="240px">
-                        <p>層雲</p>
+                    <a href="clouds.html#cloud2" id="cloud2" class="cloud">
+                        <img src="img/cloud2.png" alt="" width="240px">
+                        <p>巻積雲</p>
                     </a>
-                    <a href="clouds.html" id="cloud8" class="cloud"><img src="img/cloud8.png" alt="" width="240px">
+                    <a href="clouds.html#cloud3" id="cloud3" class="cloud">
+                        <img src="img/cloud3.png" alt="" width="240px">
+                        <p>巻層雲</p>
+                    </a>
+                    <a href="clouds.html#cloud4" id="cloud4" class="cloud">
+                        <img src="img/cloud4.png" alt="" width="240px">
+                        <p>高積雲</p>
+                    </a>
+                    <a href="clouds.html#cloud5" id="cloud5" class="cloud">
+                        <img src="img/cloud5.png" alt="" width="240px">
+                        <p>高層雲</p>
+                    </a>
+                    <a href="clouds.html#cloud6" id="cloud6" class="cloud">
+                        <img src="img/cloud6.png" alt="" width="240px">
+                        <p>乱層雲</p>
+                    </a>
+                    <a href="clouds.html#cloud7" id="cloud7" class="cloud"><img src="img/cloud7.png" alt="" width="240px">
+                        <p>積雲</p>
+                    </a>
+                    <a href="clouds.html#cloud8" id="cloud8" class="cloud"><img src="img/cloud8.png" alt="" width="240px">
                         <p>層積雲</p>
                     </a>
-                    <a href="clouds.html" id="cloud7" class="cloud"><img src="img/cloud7.png" alt="" width="240px">
-                        <p>積雲</p>
+                    <a href="clouds.html#cloud9" id="cloud9" class="cloud"><img src="img/cloud9.png" alt="" width="240px">
+                        <p>層雲</p>
+                    </a>
+                    <a href="clouds.html#cloud10" id="cloud10" class="cloud"><img src="img/cloud10.png" alt="" width="220px">
+                        <p>積乱雲</p>
                     </a>
                 </div>
             </div>
-            <div id="height" class="fuwat_scroll">
+            <div id="height" class="fuwat_scroll section1">
+              <div class="subtitle">
+               <img src="img/01_magglass.png" alt="">
                 <h2>高さで分ける雲</h2>
+                </div>
                 <div class="flex">
                     <div class="img_animation_1">
                         <a href="javascript:void(0);">
@@ -116,24 +147,27 @@
                     </div>
                 </div>
             </div>
-            <div id="weather_link_all" class="fuwat_scroll">
+            <div id="weather_link_all" class="fuwat_scroll section1">
+              <div class="subtitle">
+               <img src="img/01_magglass.png" alt="">
                 <h2>天気で分ける雲</h2>
+                </div>
                 <div class="flex">
                     <div id="weather_sun" class="weather_link">
-                        <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather1.png" alt="" width="200px">
+                        <a href="weather.html" class="link_underline">
+                            <img src="img/01_section1_weather1.png" alt="" width="160px">
                             <h3>▷ 晴れの日の雲</h3>
                         </a>
                     </div>
                     <div id="weather_cloud" class="weather_link">
-                        <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather2.png" alt="" width="200px">
+                        <a href="weather.html" class="link_underline">
+                            <img src="img/01_section1_weather2.png" alt="" width="160px">
                             <h3>▷ 曇りの日の雲</h3>
                         </a>
                     </div>
                     <div id="weather_rain" class="weather_link">
-                        <a href="weather.html" class="underline">
-                            <img src="img/01_section1_weather3.png" alt="" width="200px">
+                        <a href="weather.html" class="link_underline">
+                            <img src="img/01_section1_weather3.png" alt="" width="160px">
                             <h3>▷ 雨の日の雲</h3>
                         </a>
                     </div>
@@ -145,20 +179,7 @@
         <div class="wrapper">
             <h2>今日の天気は？</h2>
             <div class="bg_white">
-                <div class="mamewaza_weather">
-                    <div>
-                        <div class="mamewaza_weather_exp"></div>
-                    </div>
-                </div>
-                <script type="text/javascript" src="https://mamewaza.net/weather.js?200804"></script>
-                <script type="text/javascript">
-                    mamewaza_weather({
-                        layout: "horizontal",
-                        when: "7days",
-                        region: "130010",
-                        style: "div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"
-                    })
-                </script>
+                <div class="mamewaza_weather"><div><div class="mamewaza_weather_exp"></div></div></div><script type="text/javascript" src="https://mamewaza.net/weather.js?200804"></script><script type="text/javascript">mamewaza_weather({layout:"horizontal",when:"7days",region:"130010",style:"div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:1px dashed #eeeeee;}div.mamewaza_weather,div.mamewaza_weather a{color:#000;}div.mamewaza_weather span.mamewaza_weather_icon{color:inherit;font-size:36px;text-shadow:none;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#000000;font-size:12px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#00f;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#f00;}"})</script>
             </div>
         </div>
         <a href="https://twiter.com/share?
@@ -170,7 +191,7 @@
         <div class="wrapper">
             <nav>
                 <li><a href="index.html" class="link_underline">ホーム</a></li>
-                <li><a href="#" class="link_underline">身近な雲</a></li>
+                <li><a href="#" class="link_underline pagetop">身近な雲</a></li>
                 <li><a href="content2.html" class="link_underline">集中豪雨</a></li>
                 <li><a href="content3.html" class="link_underline">地球温暖化</a></li>
                 <li><a href="content4.html" class="link_underline">私たちにできること</a></li>
@@ -185,7 +206,7 @@
             ScrollReveal().reveal('.fuwat_scroll', {
                 delay: 200,
                 distance: '30px',
-                origin: 'top',
+                origin: 'bottom',
                 duration: 2000
             });
         });
@@ -205,6 +226,36 @@
             slidesToShow: 3,
             sLidesToScroll: 1,
             arrows: true,
+            responsive: [{
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }  
+            }]
         });
     </script>
+    <script src="js/smooth_scroll.js"></script>
+    <script>
+    $(function () {
+    var $pageTop = $(".pagetop")
+    $pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            $pageTop.fadeIn();
+        } else {
+            $pageTop.fadeOut();
+        }
+    });
+    $('a[href^="#"]').click(function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+            scrollTop: position
+        }, 500, "swing");
+        return false;
+    });
+});
+</script>
 </body></html>

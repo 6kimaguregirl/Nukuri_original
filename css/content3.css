@@ -7,6 +7,10 @@ section {
 header {
     background-image: url(img/bg_content3_2.png);
 }
+h1{
+    text-shadow: 3px 3px 2px rgba(240,240,240,0.9),
+    5px 5px 4px rgba(150,130,130,0.5);
+}
 
 /*section1 年間の気象状況の比較について------------------*/
 /*#section1 .title {
@@ -16,20 +20,28 @@ header {
     justify-content: space-between;
 }
 
-#section1 p small {
-    background-color: #ededed;
-}
-
 #section1_graph2 figure {
     padding-top: 65px;
 }
 
-#section1 .year{
+#section1 .year {
     width: 150px;
     display: block;
     margin: 0 0 0 auto;
 }
+
+a{
+    color: #001E4E;
+}
+
 /*section2について---------------------------------------------*/
+#section2 {
+    background-image: url(img/03_section2_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #section2 .title {
     position: relative;
 }
@@ -72,12 +84,15 @@ header {
     display: flex;
     flex-direction: column;
 }
-#section2 #section2_data2 .flex h5{
+
+#section2 #section2_data2 .flex h5 {
     padding: 20px;
 }
-#section2 #section2_data3 .flex h5{
+
+#section2 #section2_data3 .flex h5 {
     padding: 20px;
 }
+
 #section2 #section2_data5 h3 {
     padding-top: 20px;
 }
@@ -118,6 +133,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 #section3 {
     margin-bottom: 100px;
 }
@@ -125,11 +141,10 @@ header {
 /*footerについて-----------------------------------------------*/
 footer {
     background-image: url(img/bg_content3_2.png);
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: overlay;
 }
 
-footer nav li a span {
-    color: #fff;
-}
 
 /* ---ここからスマホ版----------------------*/
 @media screen and (max-width:479px) {
@@ -148,21 +163,37 @@ footer nav li a span {
     #section1 .flex {
         flex-direction: column;
     }
-    #section1 h3{
+
+    #section1 h3 {
         text-align: center;
     }
+
     #section1 .data {
         width: 300px;
         display: block;
         margin: 0 auto;
     }
-    #section1 .year{
+
+    #section1 .year {
         width: 100px;
         display: block;
         margin: 5px 20px 0 auto;
     }
+
+    #section2 {
+        background-size: cover;
+    }
+
+    #section2 .title h2 {
+        padding-bottom: 0;
+    }
+
     #section2 .title p {
         padding: 0;
+    }
+
+    #section2 .title {
+        margin-bottom: 30px;
     }
 
     #section2 .section2_data .flex {
@@ -171,7 +202,17 @@ footer nav li a span {
         padding: 0;
     }
 
-    #section2 .section2_data h5 {
+    #section2 .section2_data p data {
+        font-size: 24px;
+    }
+
+    #section2 #section2_data2 .flex h5 {
+        padding: 0;
+        font-size: 10px;
+    }
+
+    #section2 #section2_data3 .flex h5 {
+        padding: 0;
         font-size: 10px;
     }
 
@@ -194,7 +235,8 @@ footer nav li a span {
     #section3 .flex {
         flex-direction: column
     }
-    #section3{
+
+    #section3 {
         margin-bottom: 50px;
     }
 }

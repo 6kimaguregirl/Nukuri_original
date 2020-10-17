@@ -3,129 +3,200 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/height.css">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/animation.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/link.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高さでわける雲</title>
 </head>
 
 <body>
-   
-    <header class="header">
-       <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
-    <a class="menu">
-        <span class="menu__line menu__line--top"></span>
-        <span class="menu__line menu__line--center"></span>
-        <span class="menu__line menu__line--bottom"></span>
-    </a>
-    <nav class="gnav">
-        <div class="gnav__wrap">
-            <ul class="gnav__menu">
-                <li class="gnav__menu__item"><a href="index.html">Home</a></li>
-                <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
-                <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
-                <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
-                <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
-                <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
-                <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
-            </ul>
-        </div>
-        <!--gnav-wrap-->
-    </nav>
-        <div class="wrapper">
-            <div class="title">
-                <h1>上層雲</h1>
-                <p>対流圏の上層に発生する雲。5～13kmの高さによく現れる。氷の粒から雲が出来ているのが特徴。</p>
-            </div>
-        </div>
-    </header>
-    <section id="height_1">
-        <div class="wrapper height_content">
-            <h2>上層雲一覧</h2>
-            <div class="flex">
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">巻雲</a>
+    <div id="pagepiling">
+        <section id="height_1" class="section pp-scrollable">
+            <header class="header">
+                <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
+                <a class="menu">
+                    <span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </a>
+                <nav class="gnav">
+                    <div class="gnav__wrap">
+                        <ul class="gnav__menu">
+                            <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                            <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                            <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                            <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                            <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>上層雲</h1>
+                        <p>対流圏の上層に発生する雲。5～13kmの高さによく現れる。氷の粒から雲が出来ているのが特徴。</p>
+                    </div>
                 </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">巻積雲</a>
-                </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">巻層雲</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <header class="header">
-        <div class="wrapper">
-            <div class="title">
-                <h1>中層雲</h1>
-                <p>2～7kmの高さによく現れる雲。高層雲は基本中層に見られるが、上層まで広がっていることが多く、乱層雲は基本中層に見られるが、上層もしくは下層に広がっていることが多い。</p>
-            </div>
-        </div>
-    </header>
-    <section id="height_2">
-        <div class="wrapper height_content">
-            <h2>中層雲一覧</h2>
-            <div class="flex">
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">高積雲</a>
-                </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">高層雲</a>
-                </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">乱層雲</a>
+            </header>
+            <div class="wrapper height_content">
+                <h2>上層雲一覧</h2>
+                <div class="flex">
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud1" class="flex_column">
+                            <img src="img/cloud1.png" alt="" width="200px">
+                            <h3>巻雲</h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud2" class="flex_column">
+                            <img src="img/cloud2.png" alt="" width="200px">
+                            <h3>巻積雲</h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud3" class="flex_column">
+                            <img src="img/cloud3.png" alt="" width="200px">
+                            <h3>巻層雲</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <header class="header">
-        <div class="wrapper">
-            <div class="title">
-                <h1>下層雲</h1>
-                <p>地面付近～2kmの高さによく現れる雲。積雲、積乱雲は普通下層にあるが、雲頂は中、上層まで達していることが多い。</p>
+            <a href="#" class="scroll">scroll</a>
+        </section>
+        <section id="height_2" class="section pp-scrollable">
+            <header class="header">
+                <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
+                <a class="menu">
+                    <span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </a>
+                <nav class="gnav">
+                    <div class="gnav__wrap">
+                        <ul class="gnav__menu">
+                            <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                            <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                            <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                            <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                            <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>中層雲</h1>
+                        <p>2～7kmの高さによく現れる雲。高層雲は基本中層に見られるが、上層まで広がっていることが多く、乱層雲は基本中層に見られるが、上層もしくは下層に広がっていることが多い。</p>
+                    </div>
+                </div>
+            </header>
+            <div class="wrapper height_content">
+                <h2>中層雲一覧</h2>
+                <div class="flex">
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud4" class="flex_column">
+                            <img src="img/cloud4.png" alt="" width="200px">
+                            <h3>高積雲</h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud5" class="flex_column">
+                            <img src="img/cloud5.png" alt="" width="200px">
+                            <h3>高層雲</h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud6" class="flex_column">
+                            <img src="img/cloud6.png" alt="" width="200px">
+                            <h3>乱層雲</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
-    <section id="height_3">
-        <div class="wrapper height_content">
-            <h2>下層雲一覧</h2>
-            <div class="flex">
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">積雲</a>
+            <a href="#" class="scroll">scroll</a>
+        </section>
+
+        <section id="height_3" class="section pp-scrollable">
+            <header class="header">
+                <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
+                <a class="menu">
+                    <span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </a>
+                <nav class="gnav">
+                    <div class="gnav__wrap">
+                        <ul class="gnav__menu">
+                            <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                            <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                            <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                            <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                            <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>下層雲</h1>
+                        <p>地面付近～2kmの高さによく現れる雲。積雲、積乱雲は普通下層にあるが、雲頂は中、上層まで達していることが多い。</p>
+                    </div>
                 </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">層積雲</a>
-                </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href="" class="underline">層雲</a>
-                </div>
-                <div class="height_cloud">
-                    <img src="img/cloud10.png" alt="" width="200px">
-                    <a href=""  class="underline">積乱雲</a>
+            </header>
+            <div class="wrapper height_content">
+                <h2>下層雲一覧</h2>
+                <div class="flex">
+                    <div class="height_cloud" >
+                        <a href="clouds.html#cloud7" class="flex_column">
+                            <img src="img/cloud7.png" alt="" width="200px">
+                            <h3>積雲</h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud8" class="flex_column">
+                            <img src="img/cloud8.png" alt="" width="200px">
+                            <h3 >層積雲</h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud9" class="flex_column">
+                            <img src="img/cloud9.png" alt="" width="200px">
+                            <h3 class="underline">層雲
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="height_cloud">
+                        <a href="clouds.html#cloud10" class="flex_column">
+                            <img src="img/cloud10.png" alt="" width="200px">
+                            <h3 class="underline">積乱雲
+                            </h3>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="wrapper">
-            <h3>Face the climate emergency</h3>
-        </div>
-    </footer>
+        </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $('.menu').on('click', function() {
             $('.menu__line').toggleClass('active');
             $('.gnav').fadeToggle();
+        });
+    </script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script>
+        $(function() {
+            $('#pagepiling').pagepiling({
+                sectionSelector: '.section',
+            });
         });
     </script>
 </body></html>

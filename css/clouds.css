@@ -1,35 +1,147 @@
+/*headerの画像挿入について*/
+header {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cloud1 header {
+    background-image: url(img/ex_cloud1.jpg);
+}
+
+#cloud2 header {
+    background-image: url(img/ex_cloud2.jpg);
+}
+
+#cloud3 header {
+    background-image: url(img/ex_cloud3.jpeg);
+}
+
+#cloud4 header {
+    background-image: url(img/ex_cloud4.jpg);
+}
+
+#cloud5 header {
+    background-image: url(img/ex_cloud5.jpeg);
+}
+
+#cloud6 header {
+    background-image: url(img/ex_cloud6.jpg);
+}
+
+#cloud7 header {
+    background-image: url(img/ex_cloud7.jpg);
+}
+
+#cloud8 header {
+    background-image: url(img/ex_cloud8.jpg);
+}
+
+#cloud9 header {
+    background-image: url(img/ex_cloud9.jpg);
+}
+
+#cloud10 header {
+    background-image: url(img/ex_cloud10.jpg);
+}
+
+main {
+    padding-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    transform: ;
+}
+
 .eachcloud header {
     height: 200px;
 }
 
-.eachcloud{
+.eachcloud {
     background-color: #fff;
 }
 
-.eachcloud img {
+.eachcloud .wrapper img {
     width: 300px;
+    margin: 32px 0px;
+    box-shadow: -0.05px 0.05px 8px #bbb;
 }
 
 .cloud_txt {
     padding-left: 50px;
 }
 
+.scroll {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 2;
+    padding: 10px 10px 65px;
+    overflow: hidden;
+    color: #000;
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.scroll::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 50px;
+    background: #000;
+}
+
+.scroll::after {
+    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@keyframes sdl {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: 0 0;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+    }
+
+    50.1% {
+        transform: scale(1, 1);
+        transform-origin: 0 100%;
+    }
+
+    100% {
+        transform: scale(1, 0);
+        transform-origin: 0 100%;
+    }
+}
+
+
 @media screen and (max-width:479px) {
-    .flex {
-        flex-direction: column;
+    .cloud_img{
+        display: none;
     }
-
-    .eachcloud  img {
-        width: 90vw;
-        display: block;
-        margin: 0 auto;
-    }
-
+    
     .cloud_txt {
         padding-left: 0px;
-        width: 90vw;
+        margin-right: 10px;
+        width: 85vw;
         display: block;
-        margin: 0 auto;
     }
 
+    .scroll {
+        font-size: 10px;
+    }
 }

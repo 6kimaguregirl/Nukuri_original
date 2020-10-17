@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>03_globalwarming</title>
+    <link rel="icon" href="img/favicon.ico">
+    <title>03_地球温暖化</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/content3.css">
@@ -13,27 +14,29 @@
 </head>
 
 <body>
-    <header class="fuwat_scroll">
-        <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
-        <a class="menu">
+    <div class="menu_wrap">
+        <a class="menu fuwat_scroll">
             <span class="menu__line menu__line--top"></span>
             <span class="menu__line menu__line--center"></span>
             <span class="menu__line menu__line--bottom"></span>
         </a>
-        <nav class="gnav">
-            <div class="gnav__wrap">
-                <ul class="gnav__menu">
-                    <li class="gnav__menu__item"><a href="index.html">Home</a></li>
-                    <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
-                    <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
-                    <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
-                    <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
-                    <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
-                    <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
-                </ul>
-            </div>
-            <!--gnav-wrap-->
-        </nav>
+    </div>
+    <nav class="gnav">
+        <div class="gnav__wrap">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+            </ul>
+        </div>
+        <!--gnav-wrap-->
+    </nav>
+    <header class="fuwat_scroll">
+        <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
         <div class="wrapper">
             <h1><span>03</span><br>地球温暖化</h1>
             <p>最近の激しい気象災害には地球温暖化が影響している？<br>ここでは地球温暖化との関係性について詳しくみていきましょう。</p>
@@ -133,7 +136,7 @@
                         E: 広い範囲で生物多様性の損失が起きる<br>
                         F: 大規模に氷床に消失し海面水位が上昇<br>
                         G: 多くの種の絶滅リスク、世界の食糧生産が危険にさらされるリスク </p>
-                        <p><small>WWFジャパンの記事より</small></p>
+                    <p><small>WWFジャパンの記事より</small></p>
                 </div>
             </div>
         </div>
@@ -142,23 +145,23 @@
         <nav>
             <li><a href="index.html" class="link_underline">ホーム</a></li>
             <li><a href="content1.html" class="link_underline">身近な雲</a></li>
-            <li><a href="content2.html" class="link_underline_white"><span>集中豪雨</span></a></li>
-            <li><a href="#" class="link_underline_white"><span>地球温暖化</span></a></li>
-            <li><a href="content4.html" class="link_underline_white"><span>私たちにできること</span></a></li>
+            <li><a href="content2.html" class="link_underline"><span>集中豪雨</span></a></li>
+            <li><a href="#" class="link_underline pagetop"><span>地球温暖化</span></a></li>
+            <li><a href="content4.html" class="link_underline"><span>私たちにできること</span></a></li>
         </nav>
         <h3>Face the climate emergency</h3>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script>
-    $(function(){
-        ScrollReveal().reveal('.fuwat_scroll',{
-            delay:200,
-            distance:'30px',
-            origin:'top',
-            duration:2000
+        $(function() {
+            ScrollReveal().reveal('.fuwat_scroll', {
+                delay: 200,
+                distance: '30px',
+                origin: 'bottom',
+                duration: 2000
+            });
         });
-    });
     </script>
     <script>
         $('.menu').on('click', function() {
@@ -166,4 +169,27 @@
             $('.gnav').fadeToggle();
         });
     </script>
+    <script src="js/smooth_scroll.js"></script>
+    <script>
+    $(function () {
+    var $pageTop = $(".pagetop")
+    $pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            $pageTop.fadeIn();
+        } else {
+            $pageTop.fadeOut();
+        }
+    });
+    $('a[href^="#"]').click(function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+            scrollTop: position
+        }, 500, "swing");
+        return false;
+    });
+});
+</script>
 </body></html>

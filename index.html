@@ -3,104 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Original</title>
+    <title>Cloud to crisis</title>
+    <link rel="icon" href="img/favicon.ico">
+    <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css読み込み-->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/loading.css">
     <!--<link rel="stylesheet" href="css/jquery.pagepiling.css">-->
+    <!--font読み込み-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    </head>
 
 <body>
-    <header class="fuwat_scroll">
-        <div class="title">
-            <h1>最近の天気<br class="br_sp">なんだかおかしくない？</h1>
-            <h3>そんな疑問に答えるサイト</h3>
+    <div id="loader-bg">
+        <div id="loader">
+            　<p>Loading...</p>
         </div>
-    </header>
-    <section id="message" class="fuwat_scroll">
-        <div class="wrapper">
-            <p>日本近海の海面水温はこの100年で1.4℃上昇。<br>
-                地球温暖化によって気象災害は確実に増加している。<br>
-                <span class="typ">
-                    「最近の天気、
-                    なんだかおかしくない？」
-                </span><br>
-                あなたの小さな疑問はやがて確信へと変わるだろう<br>
-                確信に変わったらもう手遅れかもしれない。
-            </p>
-        </div>
-    </section>
-    <section id="content_all" class="fuwat_scroll">
-        <section id="content1" class="content">
-            <div id="stripe1" class="stripe"></div>
-            <a href="content1.html">
-                <div class="content_img">
-                    <img src="img/bg_content1.jpg" alt="">
-                </div>
-            </a>
-            <div class="content_txt">
-                <h2>Clouds</h2>
-                <h3>身近な雲</h3>
-                <p>空にぽわんと浮かぶ雲、<br>もっと知りたくなったあなたに。</p>
-                <a href="content1.html">More ></a>
+    </div>
+    <div id="load_others">
+        <header>
+            <div class="title">
+                <img src="img/top_font_pc.png" alt="" class="font_pc">
+                <img src="img/top_font_sp.png" alt="" class="font_sp">
+                <h3>そんな疑問に答えるサイト</h3>
+            </div>
+        </header>
+        <section id="message">
+            <div class="wrapper">
+                <p>日本近海の海面水温はこの100年で<strong>1.4℃</strong>上昇。<br>
+                    地球温暖化によって気象災害は確実に増加している。<br>
+                    <span class="typ">
+                        「最近の天気、
+                        なんだかおかしくない？」
+                    </span><br>
+                    あなたの小さな疑問はやがて確信へと変わるだろう。<br>
+                    確信に変わったらもう手遅れかもしれない。
+                </p>
             </div>
         </section>
-        <section id="content2" class="content">
-            <div class="content_txt">
-                <h2>Heavy rain</h2>
-                <h3>集中豪雨</h3>
-                <p>最近、天気荒れてます。<br>なんで？の疑問解決します。</p>
-                <a href="content2.html">More ></a>
-            </div>
-            <div id="stripe2" class="stripe"></div>
-            <a href="content2.html">
-                <div class="content_img">
-                    <img src="img/bg_content2.jpg" alt="">
+        <section id="content_all">
+            <section id="content1" class="content">
+                <a href="content1.html">
+                   <div id="stripe1" class="stripe"></div>
+                    <div class="content_img  content_img_left">
+                        <img src="img/bg_content1.jpg" alt="">
+                    </div>
+                </a>
+                <div class="content_txt">
+                    <h2>Clouds</h2>
+                    <h3>身近な雲</h3>
+                    <p>空にぽわんと浮かぶ雲、<br>もっと知りたくなったあなたに。</p>
+                    <a href="content1.html" class="more">More ></a>
                 </div>
-            </a>
-        </section>
-        <section id="content3" class="content">
-            <div id="stripe3" class="stripe"></div>
-            <a href="content3.html">
-                <div class="content_img">
-                    <img src="img/bg_content3.png" alt="">
+            </section>
+            <section id="content2" class="content">
+                <div class="content_txt">
+                    <h2>Heavy rain</h2>
+                    <h3>集中豪雨</h3>
+                    <p>最近、天気荒れてます。<br>なんで？の疑問解決します。</p>
+                    <a href="content2.html" class="more">More ></a>
                 </div>
-            </a>
-            <div class="content_txt">
-                <h2>Global warming</h2>
-                <h3>地球温暖化</h3>
-                <p>数字で語ります。<br>地球温暖化の深刻さ。</p>
-                <a href="content3.html">More ></a>
-            </div>
-        </section>
-        <section id="content4" class="content">
-            <div class="content_txt">
-                <h2>What we can do</h2>
-                <h3>私たちにできること</h3>
-                <p>なにができるのか、<br>考え始めたすべての方へ。</p>
-                <a href="content4.html">More ></a>
-            </div>
-            <div id="stripe4" class="stripe"></div>
-            <a href="content4.html">
-                <div class="content_img">
-                    <img src="img/bg_content4.jpg" alt="">
+                <div id="stripe2" class="stripe"></div>
+                <a href="content2.html">
+                    <div class="content_img  content_img_right">
+                        <img src="img/bg_content2.jpg" alt="">
+                    </div>
+                </a>
+            </section>
+            <section id="content3" class="content">
+                <div id="stripe3" class="stripe"></div>
+                <a href="content3.html">
+                    <div class="content_img  content_img_left">
+                        <img src="img/bg_content3.png" alt="">
+                    </div>
+                </a>
+                <div class="content_txt">
+                    <h2>Global warming</h2>
+                    <h3>地球温暖化</h3>
+                    <p>数字で語ります。<br>地球温暖化の深刻さ。</p>
+                    <a href="content3.html" class="more">More ></a>
                 </div>
-            </a>
+            </section>
+            <section id="content4" class="content">
+                <div class="content_txt">
+                    <h2>What we can do</h2>
+                    <h3>私たちにできること</h3>
+                    <p>なにができるのか、<br>考え始めたすべての方へ。</p>
+                    <a href="content4.html" class="more">More ></a>
+                </div>
+                <div id="stripe4" class="stripe"></div>
+                <a href="content4.html">
+                    <div class="content_img content_img_right">
+                        <img src="img/bg_content4.jpg" alt="">
+                    </div>
+                </a>
+            </section>
         </section>
-    </section>
-    <footer class="fuwat_scroll">
-        <div class="wrapper">
-            <nav>
-                <li><a href="#" class="link_underline_white">ホーム</a></li>
-                <li><a href="content1.html" class="link_underline_white">身近な雲</a></li>
-                <li><a href="content2.html" class="link_underline_white">集中豪雨</a></li>
-                <li><a href="content3.html" class="link_underline_white" _white>地球温暖化</a></li>
-                <li><a href="content4.html" class="link_underline_white">私たちにできること</a></li>
-            </nav>
-        </div>
-        <h3>Face the climate emergency</h3>
-    </footer>
+        <footer>
+            <div class="wrapper">
+                <nav>
+                    <li><a href="#" class="link_underline_white pagetop">ホーム</a></li>
+                    <li><a href="content1.html" class="link_underline_white">身近な雲</a></li>
+                    <li><a href="content2.html" class="link_underline_white">集中豪雨</a></li>
+                    <li><a href="content3.html" class="link_underline_white" _white>地球温暖化</a></li>
+                    <li><a href="content4.html" class="link_underline_white">私たちにできること</a></li>
+                </nav>
+            </div>
+            <h3>Face the climate emergency</h3>
+        </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script>
@@ -113,15 +129,19 @@
             });
         });
     </script>
-    <!--
-    <script src="js/jquery.pagepiling.min.js"></script>
     <script>
         $(function() {
-            $('#pagepiling').pagepiling({
-                sectionSelector: '.scroll_section',
-            });
+            var h = $(window).height();
+
+            $('#load_others').css('display', 'none');
+            $('#loader-bg ,#loader').height(h).css('display', 'block'); //ローディング画像を表示
         });
-    </script>-->
+        $(window).on('load', function() { // 読み込み完了したら実行する
+            $('#loader-bg').delay(3000).fadeOut(500); // ローディングを隠す
+            $('#loader').delay(3000).fadeOut(800);
+            $('#load_others').css('display', 'block'); // コンテンツを表示する
+        });
+    </script>
     <script>
         $(function() {
             var $allMsg = $('.typ');
@@ -160,4 +180,27 @@
             $(this).addClass('slidein_right');
         });
     </script>
+    <script src="js/smooth_scroll.js"></script>
+    <script>
+    $(function () {
+    var $pageTop = $(".pagetop")
+    $pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            $pageTop.fadeIn();
+        } else {
+            $pageTop.fadeOut();
+        }
+    });
+    $('a[href^="#"]').click(function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({
+            scrollTop: position
+        }, 500, "swing");
+        return false;
+    });
+});
+</script>
 </body></html>

@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/weather.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/link.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気でわける雲</title>
 </head>
+
 <body>
-    
+    <div id="pagepiling">
+        <section id="weather_1" class="section pp-scrollable">
+            <header class="header">
+                <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
+                <a class="menu">
+                    <span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </a>
+                <nav class="gnav">
+                    <div class="gnav__wrap">
+                        <ul class="gnav__menu">
+                            <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                            <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                            <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                            <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                            <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>晴れ</h1>
+                        <p>晴れの日に観測できる雲</p>
+                    </div>
+                </div>
+            </header>
+            <div class="wrapper weather_content">
+                <h2>晴れの日の雲一覧</h2>
+                <div class="flex">
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud1" class="flex_column">
+                            <img src="img/cloud1.png" alt="" width="200px">
+                            <h3>巻雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud2" class="flex_column">
+                            <img src="img/cloud2.png" alt="" width="200px">
+                            <h3>巻積雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud4" class="flex_column">
+                            <img src="img/cloud4.png" alt="" width="200px">
+                            <h3>高積雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud7" class="flex_column">
+                            <img src="img/cloud7.png" alt="" width="200px">
+                            <h3>積雲</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="scroll">scroll</a>
+        </section>
+        <section id="weather_2" class="section pp-scrollable">
+            <header class="header">
+                <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
+                <a class="menu">
+                    <span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </a>
+                <nav class="gnav">
+                    <div class="gnav__wrap">
+                        <ul class="gnav__menu">
+                            <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                            <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                            <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                            <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                            <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>曇り</h1>
+                        <p>曇りの日に観測できる雲</p>
+                    </div>
+                </div>
+            </header>
+            <div class="wrapper weather_content">
+                <h2>曇りの日の雲一覧</h2>
+                <div class="flex">
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud5" class="flex_column">
+                            <img src="img/cloud5.png" alt="" width="200px">
+                            <h3>高層雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud8" class="flex_column">
+                            <img src="img/cloud8.png" alt="" width="200px">
+                            <h3>層積雲</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="scroll">scroll</a>
+        </section>
+
+        <section id="weather_3" class="section pp-scrollable">
+            <header class="header">
+                <img src="img/menu.svg" alt="" width="70px" class="menu_cloud">
+                <a class="menu">
+                    <span class="menu__line menu__line--top"></span>
+                    <span class="menu__line menu__line--center"></span>
+                    <span class="menu__line menu__line--bottom"></span>
+                </a>
+                <nav class="gnav">
+                    <div class="gnav__wrap">
+                        <ul class="gnav__menu">
+                            <li class="gnav__menu__item"><a href="index.html">Home</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#message">Message</a></li>
+                            <li class="gnav__menu__item"><a href="index.html#contents_all">contents</a></li>
+                            <li class="gnav__menu__item"><a href="content1.html">-01 身近な雲</a></li>
+                            <li class="gnav__menu__item"><a href="content2.html">-02 集中豪雨</a></li>
+                            <li class="gnav__menu__item"><a href="content3.html">-03 温暖化</a></li>
+                            <li class="gnav__menu__item"><a href="content4.html">-04 私たちにできること</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="wrapper">
+                    <div class="title">
+                        <h1>雨</h1>
+                        <p>雨の日に観測できる雲</p>
+                    </div>
+                </div>
+            </header>
+            <div class="wrapper weather_content">
+                <h2>雨の日の雲一覧</h2>
+                <div class="flex">
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud5" class="flex_column">
+                            <img src="img/cloud5.png" alt="" width="200px">
+                            <h3>高層雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud6" class="flex_column">
+                            <img src="img/cloud6.png" alt="" width="200px">
+                            <h3>乱層雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud9" class="flex_column">
+                            <img src="img/cloud9.png" alt="" width="200px">
+                            <h3>層雲</h3>
+                        </a>
+                    </div>
+                    <div class="weather_cloud">
+                        <a href="clouds.htmlcloud10" class="flex_column">
+                            <img src="img/cloud10.png" alt="" width="200px">
+                            <h3>積乱雲</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.menu').on('click', function() {
+            $('.menu__line').toggleClass('active');
+            $('.gnav').fadeToggle();
+        });
+
+    </script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script>
+        $(function() {
+            $('#pagepiling').pagepiling({
+                sectionSelector: '.section',
+            });
+        });
+
+    </script>
 </body>
+
 </html>
